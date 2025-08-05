@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted} from 'vue';
 import ProjectCard from '../components/ProjectCard.vue';
 import TechStack from '../components/TechStack.vue';
 import whlogo from '../assets/wh.svg';
 import EducationCard from '../components/EducationCard.vue';
 import ExperienceCard from '../components/ExperienceCard.vue';
+import { useIntersectionObserver } from '@vueuse/core'
 
     const projects = [
         {name: 'Project 1', image: '', description: 'lorem lorem lorem lorem lorem'},
@@ -38,6 +39,47 @@ import ExperienceCard from '../components/ExperienceCard.vue';
     },
     ];
 
+const showProjects = ref(false)
+const showExperience = ref(false)
+const showEducation = ref(false)
+const showContact = ref(false)
+
+const projectSection = ref(null)
+const experienceSection = ref(null)
+const educationSection = ref(null)
+const contactSection = ref(null)
+const experienceRefs = ref([]) 
+const showExperienceCards = ref(experiences.map(() => false))
+
+function setExperienceRef(el, index) {
+  experienceRefs.value[index] = el
+}
+
+useIntersectionObserver(projectSection, ([{ isIntersecting }]) => {
+  if (isIntersecting) showProjects.value = true
+}, { threshold: 0.1 })
+
+useIntersectionObserver(experienceSection, ([{ isIntersecting }]) => {
+  if (isIntersecting) showExperience.value = true
+}, { threshold: 0.1 })
+
+useIntersectionObserver(educationSection, ([{ isIntersecting }]) => {
+  if (isIntersecting) showEducation.value = true
+}, { threshold: 0.1 })
+
+useIntersectionObserver(contactSection, ([{ isIntersecting }]) => {
+  if (isIntersecting) showContact.value = true
+}, { threshold: 0.1 })
+
+
+onMounted(() => {
+  experienceRefs.value.forEach((el, index) => {
+    if (!el) return
+    useIntersectionObserver(el, ([{ isIntersecting }]) => {
+      if (isIntersecting) showExperienceCards.value[index] = true
+    }, { threshold: 0.1 })
+  })
+})
 </script>
 
 <template>
@@ -52,7 +94,7 @@ import ExperienceCard from '../components/ExperienceCard.vue';
         </div>
         <div class="home-left">
             <TechStack/>
-            <div class="home-projects-container">
+            <div class="home-projects-container fade-section" ref="projectSection" :class="{ 'fade-in': showProjects }">
                 <h4>Featured Projects</h4>
                 <div class="home-projects">
                     <template v-for="project in projects">
@@ -60,16 +102,20 @@ import ExperienceCard from '../components/ExperienceCard.vue';
                     </template>
                 </div>
             </div>
-            <div class="experience">
+            <div class="experience fade-section" ref="experienceSection" :class="{ 'fade-in': showExperience }">
                 <h4>Work Experience</h4>
-                <ExperienceCard v-for="(exp, index) in experiences" :exp="exp" :index="index" :isLast="index === experiences.length -1"/>
+                <ExperienceCard v-for="(exp, index) in experiences" 
+                    :exp="exp" :index="index" :isLast="index === experiences.length -1"
+                    :class="{ 'fade-in': showExperienceCards[index] }"
+                    :ref="el => setExperienceRef(el, index)"
+                />
             </div>
-            <div>
+            <div ref="educationSection" class="fade-section" :class="{ 'fade-in': showEducation }">
                 <h4>Education</h4>
                 <EducationCard/>
             </div>
-            <div class="contact-cta">
-                <p> Want to collaborate or just say hi?</p>
+            <div class="contact-cta fade-section" ref="contactSection" :class="{ 'fade-in': showContact }">
+                <p>Want to collaborate or just say hi?</p>
                 <span class="home-middle-button"><router-link to="/contact">Contact me here</router-link></span>
             </div>
         </div>
@@ -77,6 +123,18 @@ import ExperienceCard from '../components/ExperienceCard.vue';
 </template>
 
 <style>
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none; /* Optional: prevent interaction before fade-in */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 .contact-cta {
   margin-top: 40px;
   font-size: 1.1rem;
@@ -145,12 +203,20 @@ import ExperienceCard from '../components/ExperienceCard.vue';
 }
 
 .info-title {
-
+    font-weight: 800;
+    font-size: 2rem;
+    color: #3e1f22;
 }
 .info-subtitle {
-    
+    font-weight: 700;
+    font-size: 1rem;
+    color: #8a4b4e;
+    font-style: italic;
 }
 .info-text {
     width:40%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #4b2a2d;
 }
 </style>
