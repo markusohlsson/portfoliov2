@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import vueLogo from '../assets/vue.svg'
 import laravelLogo from '../assets/laravel.svg'
 import mysqlLogo from '../assets/mysql.svg'
@@ -44,6 +44,13 @@ const techstacks = [
   { name: 'SCSS', image: scssLogo },
   { name: 'PHP', image: phpLogo }
 ]
+
+onMounted(() => {
+  hoveredIndex.value = 0;
+  setInterval(() => {
+    hoveredIndex.value = (hoveredIndex.value + 1) % techstacks.length;
+  }, 1500)
+})
 </script>
 
 <style scoped>

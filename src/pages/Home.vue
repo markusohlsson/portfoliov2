@@ -68,11 +68,33 @@ import ExperienceCard from '../components/ExperienceCard.vue';
                 <h4>Education</h4>
                 <EducationCard/>
             </div>
+            <div class="contact-cta">
+                <p> Want to collaborate or just say hi?</p>
+                <span class="home-middle-button"><router-link to="/contact">Contact me here</router-link></span>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
+.contact-cta {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  color: #5d3136;
+  text-align: center;
+}
+
+.contact-cta a {
+  color: #8a4b4e;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact-cta a:hover {
+  color: #5d3136;
+}
+
 .full-width {
     width: 100%;
 }
