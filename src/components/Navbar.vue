@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <div class="navigation-logo">Markus.dev</div>
+    <div class="navigation-logo"><router-link to="/">Markus.dev</router-link></div>
 
     <!-- Right Side -->
     <div class="navigation-right">
@@ -41,6 +41,10 @@
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: -0.03em;
+  a {
+    color:inherit;
+    text-decoration: none;
+  }
 }
 .navigation-right {
   position: relative;
