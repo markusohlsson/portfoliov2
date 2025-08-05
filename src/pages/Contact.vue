@@ -1,4 +1,5 @@
 <script setup>
+import { Linkedin, Mail } from 'lucide-vue-next';
 import ContactForm from '../components/ContactForm.vue';
 </script>
 <template>
@@ -10,6 +11,10 @@ import ContactForm from '../components/ContactForm.vue';
         <div class="contact-info">
             <p>Whether you’re interested in working together, have a question about one of my projects, or just want to say hello — I’d love to hear from you!</p>
             <p>Feel free to reach out using the form below or connect with me directly.</p>
+            <div class="contact-socials">
+                <a href="mailto:ohlssonmarkus1@gmail.com"><Mail/></a>
+                <a href="https://www.linkedin.com/in/markusohlsson/" target="_blank"><Linkedin/></a>
+            </div>
         </div>
     </div>
     <ContactForm/>
@@ -23,5 +28,20 @@ import ContactForm from '../components/ContactForm.vue';
 .contact {
     display: flex;
     gap:10px;
+}
+.contact-socials {
+    display: flex;
+    gap:10px;
+
+    a{
+        background-color: #5d3136;
+        color:#f9ecdf;
+        border-radius:50%;
+        padding: 5px;
+        height: 25px;
+    }
+    a:hover {
+        backgroum
+    }
 }
 </style>
