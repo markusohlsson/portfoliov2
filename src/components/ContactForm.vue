@@ -27,6 +27,9 @@
         padding:15px;
         background-color: inherit;
     }
+    textarea {
+        height:150px;
+    }
     button {
         background-color: #5d3136;
         border: none;
