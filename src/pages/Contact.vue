@@ -40,8 +40,5 @@ import ContactForm from '../components/ContactForm.vue';
         padding: 5px;
         height: 25px;
     }
-    a:hover {
-        backgroum
-    }
 }
 </style>
