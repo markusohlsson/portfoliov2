@@ -1,11 +1,43 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import ProjectCard from '../components/ProjectCard.vue';
 import TechStack from '../components/TechStack.vue';
+import whlogo from '../assets/wh.svg';
+import EducationCard from '../components/EducationCard.vue';
+import ExperienceCard from '../components/ExperienceCard.vue';
 
     const projects = [
         {name: 'Project 1', image: '', description: 'lorem lorem lorem lorem lorem'},
         {name: 'Project 2', image: '', description: 'ipsum ipsum ipsum ipsum ipsum'}
-    ]
+    ];
+
+    const experiences = [
+    {
+        workplace: 'Webhallen Sverige AB',
+        position: 'Fullstack Developer Consultant',
+        image: whlogo,
+        description: 'Worked as part of an agile team to enhance the webshop. Collaborated with UX designers and departments to align technical solutions with user and business needs.',
+        skills: ['Laravel', 'JavaScript', 'Vue.js', 'MySQL', 'SCSS', 'Git', 'JIRA'],
+        year: 'May 2024 - Current'
+    },
+    {
+        workplace: 'Webhallen Sverige AB',
+        position: 'Fullstack Developer Internship',
+        image: whlogo,
+        description: 'Completed an internship during studies focusing on both frontend and backend development. Gained experience working in an agile team and was later hired as a consultant.',
+        skills: ['Laravel', 'Vue.js', 'PHP', 'JavaScript', 'MySQL', 'Git'],
+        year: 'Oct 2023 - May 2024'
+    },
+    {
+        workplace: 'Webhallen Sverige AB',
+        position: 'Customer Service Agent',
+        image: whlogo,
+        description: 'Handled customer inquiries via chat, email, phone, and forums. Responsible for troubleshooting and managing delivery and order issues.',
+        skills: ['Customer Support', 'Troubleshooting', 'Communication'],
+        year: 'Sep 2020 - Sep 2022'
+    },
+    ];
+
 </script>
 
 <template>
@@ -28,11 +60,29 @@ import TechStack from '../components/TechStack.vue';
                     </template>
                 </div>
             </div>
+            <div class="experience">
+                <h4>Work Experience</h4>
+                <ExperienceCard v-for="(exp, index) in experiences" :exp="exp" :index="index" :isLast="index === experiences.length -1"/>
+            </div>
+            <div>
+                <h4>Education</h4>
+                <EducationCard/>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
+.full-width {
+    width: 100%;
+}
+
+
+.whlogo {
+  width: 40px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
 .home-projects {
     max-width: 80vw;
     display:flex;
@@ -62,6 +112,10 @@ import TechStack from '../components/TechStack.vue';
         color:inherit;
         text-decoration: none;
     }
+}
+
+.home-middle-button:hover {
+      background-color: #7a474c;
 }
 .home-left {
     width: 90vw;
