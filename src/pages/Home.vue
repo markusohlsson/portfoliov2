@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { ref, onMounted} from 'vue';
 import ProjectCard from '../components/ProjectCard.vue';
 import TechStack from '../components/TechStack.vue';
@@ -175,9 +175,6 @@ onMounted(() => {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
-}
-.home-middle-info {
-
 }
 .home-hero {
     height:250px;
