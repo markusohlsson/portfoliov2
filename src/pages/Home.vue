@@ -8,8 +8,8 @@ import ExperienceCard from '../components/ExperienceCard.vue';
 import { useIntersectionObserver } from '@vueuse/core'
 
     const projects = [
-        {name: 'Project 1', image: '', description: 'lorem lorem lorem lorem lorem'},
-        {name: 'Project 2', image: '', description: 'ipsum ipsum ipsum ipsum ipsum'}
+        {name: 'Placeholder', image: '', description: 'Work in progress, coming soon'},
+        {name: 'Placeholder', image: '', description: 'Work in progress, coming soon'}
     ];
 
     const experiences = [
@@ -89,7 +89,7 @@ onMounted(() => {
                 <h1 class="info-title">Markus Ohlsson</h1>
                 <h3 class="info-subtitle">Full-Stack Developer </h3>
                 <p class="info-text"> Building web applications with modern technologies</p>
-                <span class="home-middle-button"><router-link to="/Projects">See Projects</router-link></span>
+                <span class="home-middle-button"><router-link to="/About">Read more about me</router-link></span>
             </div>
         </div>
         <div class="home-left">
@@ -101,6 +101,7 @@ onMounted(() => {
                         <ProjectCard :title="project.name" :image="project.image" :description="project.description" />
                     </template>
                 </div>
+                <span class="home-middle-button"><router-link to="/Projects">See all projects</router-link></span>
             </div>
             <div class="experience fade-section" ref="experienceSection" :class="{ 'fade-in': showExperience }">
                 <h4>Work Experience</h4>
@@ -162,6 +163,13 @@ onMounted(() => {
   width: 40px;
   height: auto;
   margin-bottom: 0.5rem;
+}
+.home-projects-container {
+  display: flex;
+  flex-direction: column;
+  .home-middle-button {
+    width: fit-content;
+  }
 }
 .home-projects {
     max-width: 80vw;

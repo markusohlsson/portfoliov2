@@ -1,5 +1,5 @@
 <template>
-    <form class="contact-form" action="">
+    <form class="contact-form" action="https://formsubmit.co/8448710fdb58d0aad7a39f548d6b9d65" method="POST">
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
         <label for="email">Email</label>
@@ -8,7 +8,8 @@
         <input id="subject" name="subject" type="text">
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea>
-        <button>Send Message</button>
+        <input type="hidden" name="_next" value="http://localhost:5173/Contact/Success">
+        <button type="submit">Send Message</button>
     </form>
 </template>
 

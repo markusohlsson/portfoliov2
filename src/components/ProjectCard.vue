@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="projectcard-image" src="../assets/hero.png" alt="">
+        <img class="projectcard-image" src="../assets/wip.svg" alt="">
         <h4>{{title}}</h4>
         <p>{{description}}</p>
     </div>
