@@ -17,6 +17,7 @@
       <a href="https://medieinstitutet.se/utbildningar/webbutvecklare-inom-e-handel/" target="_blank" rel="noopener noreferrer">
         Read More
       </a>
+      
     </span>
   </div>
 </template>
