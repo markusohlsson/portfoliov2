@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <div class="navigation-logo"><router-link to="/">Markus.dev</router-link></div>
+    <div class="navigation-logo"><router-link to="/">Ohlsson.dev</router-link></div>
 
     <!-- Right Side -->
     <div class="navigation-right">
