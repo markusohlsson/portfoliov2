@@ -25,6 +25,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+
 import vueLogo from '../assets/vue.svg'
 import laravelLogo from '../assets/laravel.svg'
 import mysqlLogo from '../assets/mysql.svg'
