@@ -12,6 +12,7 @@ import { useIntersectionObserver } from '@vueuse/core'
         {name: 'Placeholder', image: '', description: 'Work in progress, coming soon'}
     ];
 
+    
     const experiences = [
     {
         workplace: 'Webhallen Sverige AB',
