@@ -10,6 +10,6 @@
         <textarea class="contact-form-textarea" name="message" id="message"></textarea>
         <input type="hidden" name="_next" value="http://localhost:5173/Contact/Success">
         <input type="hidden" name="_captcha" value="false">
-        <button type="submit">Send Message</button>
+        <button type="submit" class="contact-button">Send Message</button>
     </form>
 </template>

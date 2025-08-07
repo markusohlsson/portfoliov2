@@ -74,6 +74,14 @@ html, body {
 	   .contact-form-textarea {
 			height: 150px;
 	   }
+	   .contact-button {
+			border-radius: var(--radius-md);
+			padding: var(--space-sm);
+			background-color: var(--primary-color);
+			color: var(--secondary-color);
+			font-weight: var(--fw-bold);
+			font-size: var(--font-size-md);
+	   }
 	}
 }
 
