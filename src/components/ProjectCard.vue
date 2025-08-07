@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="projectcard">
         <img class="projectcard-image" src="../assets/wip.svg" alt="">
-        <h4>{{title}}</h4>
-        <p>{{description}}</p>
+        <h4 class="projectcard-title">{{title}}</h4>
+        <p class="projectcard-description">{{description}}</p>
     </div>
 </template>
 
@@ -13,10 +13,3 @@
         description: String,
     })
 </script>
-
-<style>
-    .projectcard-image {
-        height:50%;
-        width:75%;
-    }
-</style>

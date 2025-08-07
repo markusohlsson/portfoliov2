@@ -1,0 +1,45 @@
+:root {
+	/* Colors */
+	--primary-color: #5d3136;
+	--secondary-color: #f9ecdf;
+	--color-accent: #7a474c;
+	--color-dark: #3e1f22;
+	--color-muted: #8a4b4e;
+	--color-light-text: #4b2a2d;
+
+	/* Font */
+	--base-font: 'Lexend', sans-serif;
+	--logo-font: 'Clash Display', sans-serif;
+
+ 	/* Font Weights */
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+	--fw-extrabold: 800;
+
+	/* Font Sizes */
+	--font-size-xs: 0.75rem;    /* 12px */
+	--font-size-sm: 0.9rem;     /* 14.4px */
+	--font-size-base: 1rem;     /* 16px */
+	--font-size-md: 1.2rem;     /* 19.2px */
+	--font-size-lg: 1.5rem;     /* 24px */
+	--font-size-xl: 2rem;       /* 32px */
+	--font-size-2xl: 2.5rem;    /* 40px */
+	--font-size-3xl: 3rem;      /* 48px */
+
+				
+	/* Border Radius */
+	--radius-sm: 8px;
+	--radius-md: 12px;
+	--radius-pill: 2.5rem;
+	--radius-fifty: 50%;
+
+	/* Spacing */
+	--space-xs: 6px;
+	--space-sm: 10px;
+	--space-md: 15px;
+	--space-lg: 20px;
+	--space-xl: 28px;
+	--space-section: 2.5rem;
+}

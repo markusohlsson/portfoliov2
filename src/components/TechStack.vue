@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h3>Tech Stack</h3>
+  <div class="techstack-wrapper">
+    <h3 class="techstack-title">Tech Stack</h3>
     <div class="techstack-container">
       <div
         v-for="(techstack, index) in techstacks"
@@ -54,41 +54,3 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-.techstack-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-}
-
-.techstack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60px;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-.techstack-icon {
-  max-height: 50px;
-  transition: transform 0.3s ease;
-}
-.techstack-icon.hovered {
-  transform: scale(1.2);
-}
-
-.techstack-name {
-  font-size: 12px;
-  margin-top: 5px;
-  opacity: 0;
-  transform: translateY(5px);
-  transition: all 0.3s ease;
-}
-.techstack-name.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
