@@ -2,7 +2,7 @@
 
 .home {
 	.home-middle {
-		background-image: url('../../hero.png');
+		background-image: url('../../img/hero.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position-x: right;
