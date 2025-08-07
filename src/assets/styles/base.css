@@ -394,7 +394,7 @@ html, body {
 .footer {
 	margin-top:20px;
 	padding-top: 10px;
-	border-top: 1px solid var(--color-primary);
+	border-top: 1px solid var(--primary-color);
 	.footer-top {
 		.socials {
 			list-style-type:none;
@@ -411,8 +411,8 @@ html, body {
 				}
 			}
 			.social-icon-link:hover {
-				background-color: var(--color-primary);
-				color: var(--color-secondary);
+				background-color: var(--primary-color);
+				color: var(--secondary-color);
 				border-radius: var(--radius-fifty);
 			}
 		}
