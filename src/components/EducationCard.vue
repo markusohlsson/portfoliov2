@@ -1,6 +1,6 @@
 <template>            
   <div class="education-card">
-    <img class="education-logo" src="../assets/milogo.svg" alt="Medieinstitutet" />
+    <img class="education-logo" src="../assets/svg/milogo.svg" alt="Medieinstitutet" />
 
     <span class="education-date">Sep 2022 - May 2024</span>
     <span class="education-title">FrontEnd Developer Focus E-Commerce</span>

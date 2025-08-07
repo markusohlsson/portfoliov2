@@ -7,7 +7,7 @@ import ContactForm from '../components/ContactForm.vue';
         <h1 class="contact-title">Contact</h1>
         <div class="contact-container">
             <div class="contact-image-container">
-                <img class="contact-image" src="../assets/contact.svg" alt="">
+                <img class="contact-image" src="../assets/svg/contact.svg" alt="">
             </div>
             <div class="contact-info">
                 <p class="contact-info-text">Whether you’re interested in working together, have a question about one of my projects, or just want to say hello — I’d love to hear from you!</p>

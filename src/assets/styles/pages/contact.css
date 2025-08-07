@@ -1,0 +1,26 @@
+@import '../variables.css';
+
+.contact-wrapper {
+	.contact-container {
+	    display: flex;
+		gap: var(--space-sm);
+		.contact-image-container {
+			.contact-image {
+				height: 250px;
+			}
+		}
+		.contact-info {
+			.contact-socials {
+				display: flex;
+				gap:var(--space-sm);
+				.contact-socials-link {
+					background-color: var(--primary-color);
+					color: var(--secondary-color);
+					border-radius: var(--radius-fifty);
+					padding: 5px;
+					height: 25px;
+				}
+			}
+		}
+	}
+}

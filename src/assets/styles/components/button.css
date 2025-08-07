@@ -1,0 +1,16 @@
+@import '../variables.css';
+
+.link-button {
+  background-color: var(--primary-color);
+  color:var(--secondary-color);
+  border-radius: var(--radius-pill);
+  padding:var(--space-sm);
+  width: fit-content;
+  a {
+    color:inherit;
+    text-decoration:none;
+  }
+}
+.link-button:hover {
+  background-color: var(--color-accent);
+}

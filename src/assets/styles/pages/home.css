@@ -1,0 +1,53 @@
+@import '../variables.css';
+
+.home {
+	.home-middle {
+		background-image: url('../../hero.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: right;
+		.home-middle-info {
+			.info-title {
+				font-weight: var(--fw-extrabold);
+				font-size: var(--font-size-xl);
+				color: var(--color-dark);
+			}
+			.info-subtitle {
+				font-weight: var(--fw-bold);
+				font-size: var(--font-size-base);
+				color: var(--color-muted);
+				font-style: italic;
+			}
+			.info-text {
+				width: 40%;
+				font-size:var(-font-size-sm);
+				line-height: 1.5;
+				color: var(--color-light-text);
+			}
+		}
+	}
+
+	.home-left {
+		width:90wv;
+		margin: 0 auto;
+		.home-projects-container {
+			display: flex;
+			flex-direction: column;
+			.home-projects {
+				max-width:80vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto;
+			}
+		}
+		.contact-cta {
+			margin-top: 40px;
+			text-align:center;
+			.contact-cta-text {
+				font-size: var(--font-size-md);
+				color: var(--primary-color);
+			}
+		}
+	} 
+}

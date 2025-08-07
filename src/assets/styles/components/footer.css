@@ -1,0 +1,32 @@
+@import '../variables.css';
+
+.footer {
+	margin-top:20px;
+	padding-top: 10px;
+	border-top: 1px solid var(--primary-color);
+	.footer-top {
+		.socials {
+			list-style-type:none;
+			padding-left: 0;
+			display:flex;
+			justify-content: space-evenly;
+			.social-icon {
+				display: flex;
+				.social-icon-link {
+					color: inherit;
+					text-decoration: none;
+					padding:5px;
+					height:25px;
+				}
+			}
+			.social-icon-link:hover {
+				background-color: var(--primary-color);
+				color: var(--secondary-color);
+				border-radius: var(--radius-fifty);
+			}
+		}
+	}
+	.footer-bottom {
+		text-align: center;
+	}
+}

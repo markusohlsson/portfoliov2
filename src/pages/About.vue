@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useIntersectionObserver } from '@vueuse/core';
-// You can import images, icons or components if you want
 const skills = [
   'Vue.js', 'Laravel', 'JavaScript', 'CSS/SCSS', 'PHP', 'MySQL', 'Git', 'REST APIs'
 ]
@@ -58,7 +57,7 @@ useIntersectionObserver(contactSection, ([{isIntersecting}]) => {
   <section class="about-wrapper">
     <div class="intro-section">
       <div class="intro-photo-container">
-        <img class="intro-photo" src="../assets/profile.png" alt="Markus Ohlsson" />
+        <img class="intro-photo" src="../assets/img/profile.png" alt="Markus Ohlsson" />
       </div>
       <div class="intro-text-container">
         <h1 class="intro-text-title">Hi, I’m Markus</h1>
@@ -106,7 +105,7 @@ useIntersectionObserver(contactSection, ([{isIntersecting}]) => {
 
     <section class="cta-section fade-section" ref="contactSection" :class="{'fade-in': showContact}">
       <p class="cta-section-text">Want to know more or collaborate? Feel free to get in touch!</p>
-      <router-link class="cta-button" to="/contact">Contact Me</router-link>
+      <router-link class="link-button" to="/contact">Contact Me</router-link>
     </section>
   </section>
 </template>

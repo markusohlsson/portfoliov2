@@ -1,0 +1,19 @@
+@import '../variables.css';
+
+.coming-soon {
+	min-height: 80vh;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+ 	padding: 2rem;
+
+	.coming-soon-title {
+		font-size: var(--font-size-2xl);
+		margin-bottom: 1rem;
+	}
+	.coming-soon-text {
+		font-size: var(--font-size-md);
+	}
+}

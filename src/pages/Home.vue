@@ -2,7 +2,7 @@
 import { ref, onMounted} from 'vue';
 import ProjectCard from '../components/ProjectCard.vue';
 import TechStack from '../components/TechStack.vue';
-import whlogo from '../assets/wh.svg';
+import whlogo from '../assets/icons/wh.svg';
 import EducationCard from '../components/EducationCard.vue';
 import ExperienceCard from '../components/ExperienceCard.vue';
 import { useIntersectionObserver } from '@vueuse/core'

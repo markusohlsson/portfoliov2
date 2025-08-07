@@ -1,0 +1,69 @@
+@import '../variables.css';
+
+.work-experience {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--space-lg);
+	position: relative;
+	.work-experience-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		.work-experience-logo {
+			height: 100px;
+			border-radius: var(--radius-fifty);
+		}
+		.line {
+			height: 250px;
+			width: 1px;
+			background-color: var(--primary-color);
+			margin-top: var(--space-sm);
+		}
+	}
+	.work-experience-right {
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		gap: var(--space-sm);
+		.work-experience-year {
+			font-weight: var(--fw-bold);
+			font-size: var(--font-size-base);
+			color: var(--primary-color);
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+		.work-experience-position {
+			font-weight: var(--fw-semibold);
+			font-size: var(--font-size-md);
+			color: var(--color-dark);
+		}
+		.work-experience-company {
+			font-weight: var(--fw-bold);
+			font-size: var(--font-size-base);
+			color: var(--color-muted);
+			font-style: italic;
+			margin-bottom: var(--space-xs);
+		}
+		.work-experience-description {
+			font-size: var(--font-size-sm);
+			line-height: 1.5;
+			color: var(--color-light-text);
+			max-width: 600px;
+		}
+		.work-experience-skill-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+			.work-experience-skill {
+				border: 1px solid var(--primary-color);
+				background-color: var(--primary-color);
+				color: var(--secondary-color);
+				width: fit-content;
+				max-width: fit-content;
+				padding: 5px;
+				border-radius: var(--radius-md);
+			}
+		}
+	}
+}

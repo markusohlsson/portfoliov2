@@ -1,6 +1,6 @@
 <template>
     <div class="projectcard">
-        <img class="projectcard-image" src="../assets/wip.svg" alt="">
+        <img class="projectcard-image" src="../assets/svg/wip.svg" alt="">
         <h4 class="projectcard-title">{{title}}</h4>
         <p class="projectcard-description">{{description}}</p>
     </div>

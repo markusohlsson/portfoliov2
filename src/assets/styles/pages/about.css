@@ -1,0 +1,132 @@
+@import '../variables.css';
+.about-wrapper {
+	.intro-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+		.intro-photo-container {
+			.intro-photo {
+				width: 180px;
+				height: 180px;
+				object-fit: cover;
+				border-radius: var(--radius-fifty);
+				border: 3px solid var(--color-primary);
+			}
+		}
+		.intro-text-container {
+			.intro-text-title {
+				margin: 0 0 0.3rem 0;
+				font-size: var(--font-size-2xl);
+				font-weight: var(--fw-bold);
+				color: var(--color-muted);
+			}
+			.intro-text-subtitle {
+				margin: 0 0 1rem 0;
+				font-weight: var(--fw-semibold);
+				font-size: var(--font-size-md);
+				color: var(--color-dark);
+			}
+			.intro-text-paragraph {
+				max-width: 600px;
+				line-height:1.5;
+				font-size: var(--font-size-base);
+				color: var(--color-light-text);
+			}
+		}
+	}
+		
+	.skills-section,
+	.experience-section,
+	.philosophy-section,
+	.interests-section,
+	.cta-section {
+		margin-bottom: 2.5rem;
+	}
+
+	.skills-list,
+	.experience-list,
+	.interests-list {
+	    list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.skills-title,
+	.experience-title,
+	.philosophy-title,
+	.interests-title {
+		font-size: var(--font-size-lg);
+		color: var(--color-accent);
+		margin-bottom: 1rem;
+		border-bottom: 2px solid var(--primary-color);
+		padding-bottom: 0.25rem;
+		max-width: fit-content;
+	}
+
+	.skills-section {
+		.skills-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var(--space-sm);
+			.skill {
+				background-color: var(--primary-color);
+				color: var(--secondary-color);
+				padding: 6px 14px;
+				border-radius: var(--radius-md);
+				font-weight: var(--fw-semibold);
+				font-size: var(--font-size-base);
+			}
+		}
+	}
+
+	.experience-section {
+		.experience-list {
+			.experience-row {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 0.7rem;
+				font-weight: var(--fw-medium);
+				.experience-year {
+					min-width:70px;
+					color:var(--color-muted);
+					font-weight:var(--fw-bold);
+					text-transform: uppercase;
+					letter-spacing: 1.1px;
+				}
+			}
+		}
+	}
+
+	.philosophy-section {
+		.philosophy-text {
+			max-width: 600px;
+			font-size: var(--font-size-base);
+			line-height: 1.6;
+			color:var(--color-light-text);
+		}
+	}
+
+	.interests-section {
+		.interests-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var(--space-sm);
+			.interest {
+				background-color: var(--color-accent);
+				color:var(--secondary-color);
+				padding: 6px 14px;
+				border-radius: var(--radius-md);
+				font-weight:var(--fw-semibold);
+				font-size: var(--font-size-base);
+			}
+		}
+	}
+
+	.cta-section {
+		text-align:center;
+	}
+}
