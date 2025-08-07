@@ -4,7 +4,7 @@
             <ul class="socials">
                 <li class="social-icon"><a class="social-icon-link" href="https://www.linkedin.com/in/markusohlsson/" target="_blank"><Linkedin/></a></li>
                 <li class="social-icon"><a class="social-icon-link" href="https://www.github.com/markusohlsson" target="_blank"><Github/></a></li>
-                <li class="social-icon"><a class="social-icon-link" href="mailto:ohlssonmarkus1@gmail.com"><Mail/></a></li>
+                <li class="social-icon"><a class="social-icon-link" href="mailto:hello@ohlsson.dev"><Mail/></a></li>
                 <li class="social-icon"><a class="social-icon-link" href=""><FileUser/></a></li>
             </ul>
         </div>
