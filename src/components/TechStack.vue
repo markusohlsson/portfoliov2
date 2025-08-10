@@ -1,6 +1,6 @@
 <template>
   <div class="techstack-wrapper">
-    <h3 class="techstack-title">Tech Stack</h3>
+    <h2 class="techstack-title">Tech Stack</h2>
     <div class="techstack-container">
       <div
         v-for="(techstack, index) in techstacks"
