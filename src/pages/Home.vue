@@ -49,7 +49,7 @@ import Hero from '../components/Hero.vue';
         <div class="home-container">
             <TechStack/>
             <div class="home-projects-container" ref="projectSection">
-                <h4 class="home-projects-title">Featured Projects</h4>
+                <h3 class="home-projects-title">Featured Projects</h3>
                 <div class="home-projects">
                     <template v-for="project in projects">
                         <ProjectCard :title="project.name" :image="project.image" :description="project.description" />
@@ -64,7 +64,7 @@ import Hero from '../components/Hero.vue';
                 />
             </div>
             <div ref="educationSection" class="education" >
-                <h4 class="education-title">Education</h4>
+                <h5 class="education-title">Education</h5>
                 <EducationCard/>
             </div>
             <div class="contact-cta" ref="contactSection" data-aos="fade-up">
