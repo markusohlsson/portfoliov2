@@ -63,22 +63,11 @@ npm run preview
 
 ---
 
-## 📷 Screenshots
-
-*(Optional: Add some preview images here)*
-
----
-
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 ## 👨‍💻 Author
 
 **Markus Ohlsson**  
 Full Stack Developer  
 🌐 [ohlsson.dev](https://www.ohlsson.dev/)  
-💼 [LinkedIn](https://www.linkedin.com/) *(Add your LinkedIn link here)*  
-📧 markus@example.com *(Update with your email)*
+💼 [LinkedIn](https://www.linkedin.com/in/markusohlsson)
+📧 markus@ohlsson.dev
