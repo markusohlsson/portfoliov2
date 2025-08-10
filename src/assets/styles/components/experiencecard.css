@@ -19,7 +19,7 @@
 	height: 100px;
 	width: 100px;
 	border-radius: var(--radius-fifty);
-	padding: 5px;
+	padding: var(--space-xs);
 	background-color: var(--secondary-color);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 	object-fit: contain;
@@ -98,7 +98,7 @@
 .work-experience-skill-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px;
+	gap: var(--space-xs);
 }
 
 .work-experience-skill {

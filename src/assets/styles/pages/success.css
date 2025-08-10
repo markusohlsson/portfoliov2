@@ -6,7 +6,7 @@
 	justify-content:center;
 	text-align:center;
 	min-height: 60vh;
-	padding: 2rem;
+	padding: var(--space-2xl);
 	color: var(--primary-color);
 	background-color:var(--secondary-color);
 
@@ -15,11 +15,11 @@
 	}
 	.success-title {
 		font-size: var(--font-size-2xl);
-		margin-bottom: 1rem;
+		margin-bottom: var(--space-md);
 	}
 	.success-text {
 		font-size: var(--font-size-md);
-		margin-bottom: 2rem;
+		margin-bottom: var(--space-2xl);
 	}
 }
 

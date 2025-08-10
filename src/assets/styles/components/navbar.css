@@ -4,7 +4,7 @@
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 10px;
+	margin: var(--space-sm);
 	z-index: 111;
 	position: relative;
 	.navigation-logo {
@@ -34,7 +34,7 @@
 			color: var(--secondary-color);
 			border-radius: var(--radius-fifty);
 			height: 25px;
-			padding: 5px;
+			padding: var(--space-xs);
 			margin-bottom: -4px;
 			transition: border-radius 0.15 ease;
 		}
@@ -57,8 +57,8 @@
 			.navigation-list-item {
 				display: flex;
 				align-items: center;
-				gap: 5px;
-				padding: 10px 15px;
+				gap: var(--space-xs);
+				padding: var(--space-sm) var(--space-md);
 				text-decoration: none;
 				color: var(--secondary-color);
 				transition: background 0.2s;
@@ -101,14 +101,12 @@
 @media screen and (min-width: 768px) {
   .navigation {
     height: 75px;
-	padding: 5px;
+	padding: var(--space-xs);
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
 	margin: 0;
 	width: 100%;
 	z-index: 111;
-	.navigation-logo {
-	}
 	.navigation-logo:hover {
 		color: var(--primary-color);
 		text-shadow:
@@ -140,7 +138,7 @@
           height: 75px;
           display: flex;
           align-items: center;
-          padding: 0 15px;
+          padding: 0 var(--space-md);
           font-weight: var(--fw-bold);
           font-size: var(--font-size-md);
 		  border-radius: var(--radius-md);

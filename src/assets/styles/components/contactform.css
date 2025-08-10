@@ -19,7 +19,7 @@
   width: 100%; 
   border: 1px solid var(--primary-color);
   border-radius: var(--radius-md);
-  padding: 15px;
+  padding: var(--space-md);
   background-color: inherit;
   font-size: var(--font-size-md);
   box-sizing: border-box;
@@ -32,7 +32,7 @@
 
 .contact-form-label {
   position: absolute;
-  left: 15px;
+  left: var(--space-md);
   top: 50%;
   transform: translateY(-50%);
   color: var(--primary-color);
@@ -83,7 +83,6 @@
 .contact-form-textarea:focus {
   border-color: var(--color-accent);
   outline: none;
-  box-shadow: 0 0 0 2px rgba(122, 71, 76, 0.15); 
 }
 
 .contact-form-input:not(:placeholder-shown) + .contact-form-label,

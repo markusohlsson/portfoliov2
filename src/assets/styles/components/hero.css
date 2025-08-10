@@ -1,6 +1,8 @@
+@import '../variables.css';
+
 .hero-container {
   position: relative;
-  padding: 4rem 2rem;
+  padding: var(--space-5xl) var(--space-2xl);
   
 }
 
@@ -11,30 +13,30 @@
 }
 
 .intro {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 
 .hero-title {
-  font-size: 2.2rem;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   margin: 0.5rem 0;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-md);
 }
 
 .description {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-2xl);
 }
 
 .hero-button-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--space-md);
 
   .link-button {
     height: 30px;
@@ -52,23 +54,23 @@
         align-items: center;
     }
     .hero-title {
-        font-size: 4rem;
+        font-size: var(--font-size-4xl);
     }
     .intro {
-        font-size: 2rem;
+        font-size: var(--font-size-xl);
     }
     .subtitle {
-        font-size: 2.5rem;
+        font-size: var(--font-size-2xl);
     }
     .description {
-        font-size: 1.5rem;
+        font-size: var(--font-size-lg);
     }
     .link-button, .secondary{
         width: 250px;
         display: flex;
         justify-content: center;
-        border-radius:12px;
-        font-size: 1rem;
-        font-weight: 700;
+        border-radius:var(--radius-md);
+        font-size: var(--font-size-base);
+        font-weight: var(--fw-bold);
     }
 }

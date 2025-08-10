@@ -21,7 +21,7 @@
 .socials-container {
   display: flex;
   flex-direction: column; 
-  gap: 10px; 
+  gap: var(--space-sm); 
 }
 
 .contact-social {
@@ -30,7 +30,7 @@
   align-items: center;
   border: 1px solid var(--primary-color);
   border-radius: var(--radius-md);
-  padding: 10px 15px;
+  padding: var(--space-sm) var(--space-md);
   text-decoration: none;
   color: inherit;
   background-color: inherit;
@@ -45,7 +45,7 @@
 .contact-social-icon {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-sm);
 }
 
 .contact-social > svg {
