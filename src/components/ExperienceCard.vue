@@ -2,7 +2,7 @@
     <div class="work-experience">
         <div class="work-experience-left" data-aos="fade-right">
             <img class="work-experience-logo" :src="exp.image" :alt="exp.workplace">
-            <div v-if="!isLast" data-aos="fade-up-right">
+            <div data-aos="fade-up-right">
                 <div class="line" ></div>
             </div>
         </div>
@@ -31,6 +31,5 @@ const props = defineProps({
     skills: Array,
 },
 index: Number,
-isLast: Boolean,
 })
 </script>

@@ -62,7 +62,7 @@ import Hero from '../components/Hero.vue';
             <div class="experience" ref="experienceSection">
                 <h4 class="experience-title">Work Experience</h4>
                 <ExperienceCard v-for="(exp, index) in experiences" 
-                    :exp="exp" :index="index" :isLast="index === experiences.length -1"
+                    :exp="exp" :index="index"
                 />
             </div>
             <div ref="educationSection" class="education" >

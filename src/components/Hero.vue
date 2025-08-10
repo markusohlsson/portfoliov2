@@ -78,7 +78,7 @@ onBeforeUnmount(() => {
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   margin: 0.5rem 0;
 }
@@ -99,11 +99,4 @@ onBeforeUnmount(() => {
   gap: 1rem;
 }
 
-.link-button {
-  /* Add styling for your buttons */
-}
-
-.link-button:hover {
-  /* Add hover effect */
-}
 </style>
