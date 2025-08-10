@@ -1,6 +1,14 @@
 <template>
     <div class="footer">
         <div class="footer-top">
+            <ul class="footer-navigation">
+                <li class="footer-link"><router-link to="/">Home</router-link></li>
+                <li class="footer-link"><router-link to="/Projects">Projects</router-link></li>
+                <li class="footer-link"><router-link to="/About">About</router-link></li>
+                <li class="footer-link"><router-link to="/Contact">Contact</router-link></li>
+            </ul>
+        </div>
+        <div class="footer-middle">
             <ul class="socials">
                 <li class="social-icon"><a class="social-icon-link" href="https://www.linkedin.com/in/markusohlsson/" target="_blank"><Linkedin/></a></li>
                 <li class="social-icon"><a class="social-icon-link" href="https://www.github.com/markusohlsson" target="_blank"><Github/></a></li>

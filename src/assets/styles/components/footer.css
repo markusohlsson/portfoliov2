@@ -5,6 +5,24 @@
 	padding-top: 10px;
 	border-top: 1px solid var(--primary-color);
 	.footer-top {
+		.footer-navigation {
+			display: flex;
+			justify-content: space-evenly;
+			list-style-type: none;
+			padding-left: 0;
+			font-size: var(--font-size-md);
+			.footer-link a{
+				text-decoration: none;
+				color: inherit;
+				border-bottom: 2px solid transparent; /* invisible underline */
+				transition: border-color 0.3s ease;
+			}
+			.footer-link:hover a{
+				border-bottom-color: var(--primary-color);
+			}
+		}
+	}
+	.footer-middle {
 		.socials {
 			list-style-type:none;
 			padding-left: 0;
