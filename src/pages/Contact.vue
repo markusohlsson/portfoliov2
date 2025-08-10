@@ -21,14 +21,14 @@ import ContactForm from '../components/ContactForm.vue';
     <div class="contact-details">
       <h2 data-aos="fade-right">Or Connect On</h2>
       <div class="socials-container">
-        <a class="contact-social" href="https://www.github.com/markusohlsson" target="_blank" data-aos="fade-down-right">
+        <a class="contact-social" href="https://www.github.com/markusohlsson" target="_blank" data-aos="fade-up-right">
           <span class="contact-social-icon">
             <Github /> Github
           </span>
           <ExternalLink />
         </a>
 
-        <a class="contact-social" href="https://www.linkedin.com/in/markusohlsson" target="_blank" data-aos="fade-right">
+        <a class="contact-social" href="https://www.linkedin.com/in/markusohlsson" target="_blank" data-aos="fade-up-left">
           <span class="contact-social-icon">
             <Linkedin /> LinkedIn
           </span>
