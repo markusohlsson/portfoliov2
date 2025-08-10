@@ -1,5 +1,2 @@
 User-agent: *
 Disallow:
-
-# URL to your sitemap (update this to your actual sitemap URL if you have one)
-Sitemap: https://ohlsson.dev/sitemap.xml
