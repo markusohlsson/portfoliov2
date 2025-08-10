@@ -20,13 +20,13 @@
 
 .socials-container {
   display: flex;
-  flex-direction: column; /* stack each link vertically */
-  gap: 10px; /* spacing between links */
+  flex-direction: column; 
+  gap: 10px; 
 }
 
 .contact-social {
   display: flex;
-  justify-content: space-between; /* left & right */
+  justify-content: space-between; 
   align-items: center;
   border: 1px solid var(--primary-color);
   border-radius: var(--radius-md);
@@ -38,8 +38,8 @@
 }
 
 .contact-social:hover {
-  background-color: var(--secondary-color);
-  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--secondary-color);
 }
 
 .contact-social-icon {
@@ -51,4 +51,9 @@
 .contact-social > svg {
   display: inline-flex;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+	.contact-wrapper {
+		min-height:80vh;
+	}
 }

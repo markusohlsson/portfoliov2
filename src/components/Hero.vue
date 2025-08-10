@@ -1,7 +1,5 @@
 <template>
   <div class="hero-container" data-aos="fade-up">
-    <div class="hero-overlay"></div>
-
     <div class="hero-content">
       <div class="hero-text-content">
         <p class="intro" data-aos="fade-right" data-aos-delay="100">
@@ -60,43 +58,3 @@ onBeforeUnmount(() => {
   }
 })
 </script>
-
-<style>
-.hero-container {
-  position: relative;
-  padding: 4rem 2rem;
-}
-
-.hero-content {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.intro {
-  font-size: 1rem;
-}
-
-.hero-title {
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.hero-button-container {
-  display: flex;
-  gap: 1rem;
-}
-
-</style>

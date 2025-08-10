@@ -14,7 +14,7 @@
 			.footer-link a{
 				text-decoration: none;
 				color: inherit;
-				border-bottom: 2px solid transparent; /* invisible underline */
+				border-bottom: 2px solid transparent; 
 				transition: border-color 0.3s ease;
 			}
 			.footer-link:hover a{

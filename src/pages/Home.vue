@@ -46,9 +46,7 @@ import Hero from '../components/Hero.vue';
 <template>
     <div class="home">
         <Hero />
-        <div class="home-middle">
-        </div>
-        <div class="home-left">
+        <div class="home-container">
             <TechStack/>
             <div class="home-projects-container" ref="projectSection">
                 <h4 class="home-projects-title">Featured Projects</h4>

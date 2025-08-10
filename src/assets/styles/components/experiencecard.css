@@ -5,10 +5,9 @@
 	align-items: flex-start;
 	gap: var(--space-lg);
 	position: relative;
-	margin-bottom: var(--space-xl); /* spacing between entries */
+	margin-bottom: var(--space-xl); 
 }
 
-/* Left Side - Logo + Timeline Line */
 .work-experience-left {
 	display: flex;
 	flex-direction: column;
@@ -26,10 +25,9 @@
 	object-fit: contain;
 }
 
-/* Timeline Line */
 .line {
 	height: 250px;
-	width: 3px; /* thicker */
+	width: 3px; 
 	background-color: var(--primary-color);
 	margin-top: var(--space-sm);
 	position: relative;
@@ -56,7 +54,6 @@
 	bottom: 0;
 }
 
-/* Right Side - Content Card */
 .work-experience-right {
 	display: flex;
 	flex-direction: column;
@@ -69,7 +66,6 @@
 	max-width: 700px;
 }
 
-/* Year */
 .work-experience-year {
 	font-weight: var(--fw-bold);
 	font-size: var(--font-size-base);
@@ -78,14 +74,12 @@
 	letter-spacing: 1.2px;
 }
 
-/* Position */
 .work-experience-position {
 	font-weight: var(--fw-semibold);
 	font-size: var(--font-size-md);
 	color: var(--color-dark);
 }
 
-/* Company */
 .work-experience-company {
 	font-weight: var(--fw-bold);
 	font-size: var(--font-size-base);
@@ -94,7 +88,6 @@
 	margin-bottom: var(--space-xs);
 }
 
-/* Description */
 .work-experience-description {
 	font-size: var(--font-size-sm);
 	line-height: 1.5;
@@ -102,7 +95,6 @@
 	max-width: 600px;
 }
 
-/* Skills Container */
 .work-experience-skill-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -116,36 +108,32 @@
 	width: fit-content;
 	max-width: fit-content;
 	padding: 4px 10px;
-	border-radius: 999px; /* rounded tag style */
+	border-radius: 999px; 
 	font-size: var(--font-size-xs);
 	font-weight: var(--fw-semibold);
 }
 
 @media screen and (min-width: 768px) {
 	.work-experience {
-		gap: var(--space-xl); /* give more breathing room */
+		gap: var(--space-xl); 
 		align-items: flex-start;
 	}
 
-	/* Left side - shrink logo a bit for proportional balance */
 	.work-experience-logo {
 		height: 80px;
 		width: 80px;
 	}
 
-	/* Shorter timeline line so it doesn’t stretch awkwardly */
 	.line {
 		height: 200px;
 		width: 3px;
 	}
 
-	/* Right side - position card slightly offset from logo */
 	.work-experience-right {
 		padding: var(--space-lg);
 		max-width: 800px;
 	}
 
-	/* Typography adjustments for larger screens */
 	.work-experience-year {
 		font-size: var(--font-size-md);
 	}
@@ -163,7 +151,6 @@
 		line-height: 1.6;
 	}
 
-	/* Skills look better with more spacing on desktop */
 	.work-experience-skill-container {
 		gap: 8px;
 	}
