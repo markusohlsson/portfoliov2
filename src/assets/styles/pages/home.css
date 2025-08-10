@@ -2,7 +2,7 @@
 
 .home {
 	.home-middle {
-		background-image: url('../../img/hero.png');
+		background-image: url('../../img/herotester.jpg');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position-x: right;
@@ -30,17 +30,30 @@
 	.home-left {
 		width:90vw;
 		margin: 0 auto;
+		.techstack-title,
+		.home-projects-title,
+		.experience-title,
+		.education-title {
+			font-size: var(--font-size-xl);
+			font-weight: var(--fw-bold);
+			color: var(--primary-color);
+			margin-bottom: var(--space-md);
+			letter-spacing: -0.5px;
+			text-align: center;
+		}
 		.home-projects-container {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			.home-projects {
 				max-width:80vw;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				flex-direction: column;
 				margin: 0 auto;
 			}
-		}
+		}	
 		.contact-cta {
 			margin-top: 40px;
 			text-align:center;
@@ -50,4 +63,40 @@
 			}
 		}
 	} 
+}
+
+@media screen and (min-width: 768px) {
+	.home {
+		display: flex;
+		height:100%;
+		.home-middle {
+			background-position-x: center;
+			background-position-y: 15%;
+			.home-middle-info {
+				.info-title {
+
+				}
+				.info-subtitle {
+
+				}
+				.info-text {
+
+				}
+			}
+		}
+		.home-left {
+			width:70vw;
+			.home-projects-container {
+				
+				.home-projects {
+					flex-direction: row;
+				}
+			}
+			.contact-cta {
+				.contact-cta-text {
+
+				}
+			}
+		}
+	}
 }

@@ -1,26 +1,54 @@
 @import '../variables.css';
 
 .contact-wrapper {
-	.contact-container {
-	    display: flex;
-		gap: var(--space-sm);
-		.contact-image-container {
-			.contact-image {
-				height: 250px;
-			}
-		}
-		.contact-info {
-			.contact-socials {
-				display: flex;
-				gap:var(--space-sm);
-				.contact-socials-link {
-					background-color: var(--primary-color);
-					color: var(--secondary-color);
-					border-radius: var(--radius-fifty);
-					padding: 5px;
-					height: 25px;
-				}
-			}
-		}
-	}
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.contact-container {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.contact-info-text {
+  margin-bottom: var(--space-sm);
+}
+
+.contact-details {
+  margin-top: var(--space-md);
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column; /* stack each link vertically */
+  gap: 10px; /* spacing between links */
+}
+
+.contact-social {
+  display: flex;
+  justify-content: space-between; /* left & right */
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-md);
+  padding: 10px 15px;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-social:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--color-accent);
+}
+
+.contact-social-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-social > svg {
+  display: inline-flex;
+  align-items: center;
 }

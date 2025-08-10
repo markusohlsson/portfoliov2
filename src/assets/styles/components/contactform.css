@@ -1,31 +1,92 @@
 @import '../variables.css';
+
 .contact-form {
-	display:flex;
-	flex-direction: column;
-	gap: var(--space-sm);
-	.contact-form-label {
-		font-weight: var(--fw-extrabold);
-		font-size: var(--font-size-md);
-	} 
-	.contact-form-input, .contact-form-textarea {
-		border: 1px solid var(--primary-color);
-		border-radius: var(--radius-md);
-		padding:15px;
-		background-color: inherit;
-	}
-	.contact-form-textarea {
-		height: 150px;
-	}
-	.contact-button {
-		border-radius: var(--radius-md);
-		padding: var(--space-sm);
-		background-color: var(--primary-color);
-		color: var(--secondary-color);
-		font-weight: var(--fw-bold);
-		font-size: var(--font-size-md);
-	}
-    .contact-button:hover {
-        background-color: var(--color-accent);
-        cursor: pointer;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px; /* prevents huge stretching on large screens */
+}
+
+.contact-form-row {
+  position: relative;
+  width: 100%;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%; /* make them fill the row */
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-md);
+  padding: 15px;
+  background-color: inherit;
+  font-size: var(--font-size-md);
+  box-sizing: border-box; /* ensures padding doesn't break width */
+}
+
+.contact-form-textarea {
+  height: 150px;
+  resize: vertical; /* optional: allow vertical resize */
+}
+
+/* Label starts centered vertically */
+.contact-form-label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+  font-weight: var(--fw-extrabold);
+  font-size: var(--font-size-md);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background-color: inherit;
+  padding: 0 4px;
+}
+
+/* Inputs: move label up on focus */
+.contact-form-input:focus + .contact-form-label {
+  top: -8px;
+  transform: translateY(0);
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  background-color: var(--secondary-color);
+}
+
+/* Textarea label: start near the top inside */
+.contact-form-textarea + .contact-form-label {
+  top: 12px;
+  transform: translateY(0);
+}
+
+/* Textarea: move label up on focus */
+.contact-form-textarea:focus + .contact-form-label {
+  top: -8px;
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  background-color: var(--secondary-color);
+}
+
+.contact-button {
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--font-size-md);
+  border: none;
+}
+
+.contact-button:hover {
+  background-color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* Input & textarea focus border color */
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(122, 71, 76, 0.15); /* subtle glow */
 }

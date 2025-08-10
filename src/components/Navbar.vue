@@ -11,7 +11,7 @@
 
       <!-- Navigation List -->
         <Transition name="list-grow">
-        <ul v-if="isOpen" class="navigation-list">
+        <ul class="navigation-list" :class="{ open: isOpen, closed: !isOpen }">
             <li><router-link to="/" class="navigation-list-item"><House />Home</router-link></li>
             <li><router-link to="/Projects" class="navigation-list-item"><FolderKanban />Projects</router-link></li>
             <li><router-link to="/About" class="navigation-list-item"><User />About</router-link></li>
