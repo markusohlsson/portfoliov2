@@ -15,7 +15,7 @@
 
     <span class="link-button" data-aos="fade-up-right">
     <a href="https://medieinstitutet.se/utbildningar/webbutvecklare-inom-e-handel/" target="_blank" rel="noopener noreferrer">
-      Read More
+       Read More<span class="sr-only"> about the Webbutvecklare inom e-handel program at Medieinstitutet</span>
     </a>
     </span>
   </div>
