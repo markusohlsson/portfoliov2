@@ -1,5 +1,5 @@
 <template>
-    <form class="contact-form" action="https://formsubmit.co/hello@ohlsson.dev" method="POST">
+    <form class="contact-form" action="https://formsubmit.co/c9878decdbff65e7b18774622abdbc3b " method="POST">
         <div class="contact-form-row" data-aos="fade-down-left">
             <input class="contact-form-input" type="text" id="name" name="name" required placeholder=" ">
             <label class="contact-form-label" for="name">Name</label>
