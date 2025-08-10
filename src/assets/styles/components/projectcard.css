@@ -12,6 +12,7 @@
 	width:400px;
 	.projectcard-image {
 		margin: var(--space-md);
+		width: 150px;
 		height: 150px;
 		object-fit: contain;
 	}
