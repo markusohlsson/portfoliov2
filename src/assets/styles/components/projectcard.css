@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	border-radius: var(--radius-md);
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     border: 1px solid rgba(0,0,0,0.05);
@@ -11,10 +12,15 @@
 	height:300px;
 	width:400px;
 	.projectcard-image {
-		margin: var(--space-md);
-		width: 150px;
-		height: 150px;
-		object-fit: contain;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg {
+			height:100px;
+			width: 100px;
+			animation: spin 4s infinite linear;
+  			-webkit-animation: spin 4s infinite linear;
+    	}
 	}
 	.projectcard-title {
 		margin: var(--space-xs);
@@ -24,4 +30,19 @@
 .projectcard:hover {
 	transform: scale(1.05);
 	cursor: pointer;
+}
+
+@keyframes spin {
+	0% {
+		-moz-transform:rotate(320deg);
+		-webkit-transform:rotate(320deg);
+		-o-transform:rotate(320deg);
+		-ms-transform:rotate(320deg);
+	}
+	  100% {
+		-moz-transform:rotate(680deg);
+		-webkit-transform:rotate(680deg);
+		-o-transform:rotate(680deg);
+		-ms-transform:rotate(680deg); 
+  	}
 }
