@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { reactive } from 'vue';
 const skills = [
   'Vue.js', 'Laravel', 'JavaScript', 'CSS/SCSS', 'PHP', 'MySQL', 'Git', 'REST APIs'
 ]
@@ -18,6 +18,32 @@ const personalInterests = [
   'Football',
   'Ice Hockey'
 ]
+const awards = reactive([
+  {
+    year: 2018,
+    title: 'Rookie Of The Year',
+    company: 'Webhelp',
+    original: 'Stabil, självständig, flexibel och kvalitativ. Väldigt snabb på att komma in i arbetet likaväl som teamet. Har på kort tid blivit en person att lita på, tar ansvar för sitt eget arbete och genomför det på ett tillfredställande sätt.',
+    translation: 'Stable, independent, flexible and qualitative. Very quick to get into the work as well as the team. Has in a short time become a person to trust, takes responsibility for his own work and carries it out in a satisfactory manner.',
+    showOriginal: false,
+  },
+  {
+    year: 2018,
+    title: 'Star Award Of The Month',
+    company: 'Webhelp',
+    original: 'This person hasnt worked with us for long, and during this very short time, he has shown his skills with a lot of surprises. Hes extremely good in both assignments and delivers exceptionally well. I am extremely grateful that this person is in my team.',
+    translation: '',
+    showOriginal: false,
+  },
+  {
+    year: 2017,
+    title: 'Employee Of The Month',
+    company: 'McDonalds',
+    original: 'Markus Ohlsson är en härlig och trevlig kille som alltid gör ett 100%igt jobb på sina stationer i produktionen. Uppmanar och leder andra medarbetare till ett bättre arbete. Coachar och hjälper andra. Markus styrka är sin höga arbetsmoral att sträva efter att alltid utföra rätt operationella rutiner samt leverera hög KSR i sitt område. En bra förebild för andra medarbetare!',
+    translation: 'Markus Ohlsson is a lovely and nice guy who always does a 100% job at his stations in production. Encourages and leads other employees to do better work. Coaches and helps others. Markus strength is his high work ethic to strive to always carry out the right operational routines and deliver high KSR in his area. A good role model for other employees!',
+    showOriginal: false,
+  }
+])
 </script>
 
 <template>
@@ -74,9 +100,55 @@ const personalInterests = [
       </ul>
     </section>
 
+    <section class="awards-section">
+      <h3 class="awards-title" data-aos="fade-right">Awards and Honors</h3>
+
+      <ul class="awards-list">
+        <li
+          v-for="(award, index) in awards"
+          :key="index"
+          class="award-item"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+        >
+          <div class="award-content">
+            <h4 class="award-heading" data-aos="fade-right">{{ award.title }}</h4>
+            <div class="award-meta">
+              <div data-aos="fade-right">{{ award.company }}</div>
+              <div>-</div>
+              <div data-aos="fade-left">{{ award.year }}</div>
+            </div>
+
+            <div v-if="award.original" class="award-text-block"  data-aos="fade-up">
+              <p v-if="!award.showOriginal" class="award-description">
+                {{ award.translation || award.original }}
+              </p>
+              <p v-else class="award-original">
+                {{ award.original }}
+              </p>
+
+              <button
+                @click="award.showOriginal = !award.showOriginal"
+                v-if="award.translation"
+                class="award-toggle-btn"
+                data-aos="fade-up-right"
+              >
+                {{ award.showOriginal ? 'Show translation' : 'Show original' }}
+              </button>
+            </div>
+
+            <p v-else class="award-description">
+              {{ award.translation }}
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
     <section class="cta-section" ref="contactSection" data-aos="fade-up">
       <p class="cta-section-text" data-aos="fade-left">Want to know more or collaborate? Feel free to get in touch!</p>
-      <router-link class="link-button" to="/contact" data-aos="fade-right">Contact Me</router-link>
+      <span class="link-button"><router-link  to="/contact" data-aos="fade-right">Contact Me</router-link></span>
     </section>
   </section>
 </template>

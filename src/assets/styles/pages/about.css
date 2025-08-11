@@ -43,6 +43,7 @@
 		
 	.skills-section,
 	.experience-section,
+	.awards-section,
 	.philosophy-section,
 	.interests-section,
 	.cta-section {
@@ -51,6 +52,7 @@
 
 	.skills-list,
 	.experience-list,
+	.awards-list,
 	.interests-list {
 	    list-style: none;
 		padding: 0;
@@ -59,6 +61,7 @@
 
 	.skills-title,
 	.experience-title,
+	.awards-title,
 	.philosophy-title,
 	.interests-title {
 		font-size: var(--font-size-lg);
@@ -102,6 +105,71 @@
 				}
 			}
 		}
+	}
+	
+	.awards-section {
+	.awards-title {
+		
+	}
+
+	.awards-list {
+			display: flex;
+			gap:var(--space-3xl);
+			flex-direction: column;
+		.award-item {
+			border-radius: var(--radius-md);
+			padding: var(--space-lg);
+			border-left: 4px solid var(--primary-color);
+		.award-content {
+			.award-heading {
+			font-weight: var(--fw-semibold);
+			font-size: var(--font-size-lg);
+			color: var(--color-dark);
+			margin: 5px;
+			}
+
+			.award-meta {
+			    font-weight: var(--fw-bold);
+				font-size: var(--font-size-md);
+				color: var(--color-muted);
+				font-style: italic;
+				display: flex;
+				gap: var(--space-md); 
+				align-items: center;
+			}
+
+			.award-text-block {
+			.award-description {
+				font-size: var(--font-size-base);
+				color: var(--color-light-text);
+				line-height: 1.6;
+				max-width: 650px;
+				margin-bottom: var(--space-md);
+			}
+
+			.award-original {
+				font-size: var(--font-size-base);
+				color: var(--color-light-text);
+				line-height: 1.6;
+				max-width: 650px;
+				margin-bottom: var(--space-md);
+			}
+
+			.award-toggle-btn {
+				border-radius: var(--radius-md);
+				padding: var(--space-xs) var(--space-sm);
+				border: 0;
+				color: var(--secondary-color);
+				background-color: var(--primary-color);
+			}
+			.award-toggle-btn:hover {
+				background-color: var(--color-accent);
+				cursor: pointer;
+			}
+			}
+		}
+		}
+	}
 	}
 
 	.philosophy-section {

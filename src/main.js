@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 
 AOS.init({
     duration:800,
-    offset: 100,
+    offset: 150,
     once: false,
     mirror: true,
 })
