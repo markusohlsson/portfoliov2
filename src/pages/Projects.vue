@@ -1,7 +1,13 @@
 <template>
   <div class="project-wrapper">
-    <template v-for="(project, index) in projects" :key="project.id">
-      <LargeProjectCard :project="project" :index="index" />
+    <template
+      v-for="(project, index) in projects"
+      :key="project.id"
+    >
+      <LargeProjectCard
+        :project="project"
+        :index="index"
+      />
     </template>
   </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
   <div class="techstack-wrapper">
-    <h2 class="techstack-title">Core Skills</h2>
+    <h2 class="techstack-title">
+      Core Skills
+    </h2>
     <div class="techstack-container">
       <div
         v-for="(techstack, index) in comfortableTech"
@@ -13,7 +15,7 @@
           class="techstack-icon"
           :src="techstack.icon"
           :alt="techstack.name"
-        />
+        >
         <span class="techstack-name">
           {{ techstack.name }}
         </span>
@@ -23,6 +25,6 @@
 </template>
 
 <script setup>
-import { techs, comfortableTech } from '../data/techs';
+import { comfortableTech } from '../data/techs';
 </script>
 

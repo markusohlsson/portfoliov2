@@ -1,28 +1,61 @@
 <template>
-  <div class="hero-container" data-aos="fade-up">
+  <div
+    class="hero-container"
+    data-aos="fade-up"
+  >
     <div class="hero-content">
       <div class="hero-text-content">
-        <p class="intro" data-aos="fade-right" data-aos-delay="100">
+        <p
+          class="intro"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           Hi, my name is
         </p>
 
-        <h1 class="hero-title" data-aos="fade-right" data-aos-delay="200">
-          <span ref="typedEl"></span>
+        <h1
+          class="hero-title"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <span ref="typedEl" />
         </h1>
 
-        <p class="subtitle" data-aos="fade-left" data-aos-delay="300">
+        <p
+          class="subtitle"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           A full-stack developer
         </p>
 
-        <p class="description" data-aos="fade-up" data-aos-delay="400">
+        <p
+          class="description"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           I build high-quality web and mobile applications with a focus on
           user experience and performance. Explore my portfolio to see some
           of my recent projects.
         </p>
 
-        <div class="hero-button-container" data-aos="zoom-in" data-aos-delay="500">
-            <router-link to="/about" class="link-button large">About me</router-link>
-            <router-link to="/projects" class="link-button secondary large">Projects</router-link>
+        <div
+          class="hero-button-container"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
+          <router-link
+            to="/about"
+            class="link-button large"
+          >
+            About me
+          </router-link>
+          <router-link
+            to="/projects"
+            class="link-button secondary large"
+          >
+            Projects
+          </router-link>
         </div>
       </div>
     </div>

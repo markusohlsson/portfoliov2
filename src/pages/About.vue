@@ -55,13 +55,22 @@ const awards = reactive([
   <section class="about-wrapper">
     <div class="intro-section">
       <div class="intro-text-container">
-        <h1 class="intro-text-title" data-aos="fade-left">
+        <h1
+          class="intro-text-title"
+          data-aos="fade-left"
+        >
           Hi, I’m Markus
         </h1>
-        <h2 class="intro-text-subtitle" data-aos="fade-right">
+        <h2
+          class="intro-text-subtitle"
+          data-aos="fade-right"
+        >
           Turning ideas into fast, beautiful, and functional digital products
         </h2>
-        <p class="intro-text-paragraph" data-aos="fade-up">
+        <p
+          class="intro-text-paragraph"
+          data-aos="fade-up"
+        >
           My journey into development started with a curiosity for how things work
           on the web—and turned into a passion for building solutions that make
           people’s lives easier. I love tackling complex problems, crafting clean
@@ -72,52 +81,132 @@ const awards = reactive([
       </div>
     </div>
 
-    <section class="skills-section" ref="skillsSection" >
-      <h3 class="skills-title" data-aos="fade-right">Comfortable Tech</h3>
+    <section
+      ref="skillsSection"
+      class="skills-section"
+    >
+      <h3
+        class="skills-title"
+        data-aos="fade-right"
+      >
+        Comfortable Tech
+      </h3>
       <ul class="skills-list">
-        <li v-for="(tech, index) in comfortableTech" :key="tech" class="skill" data-aos="fade-up" :data-aos-delay="index * 100">
-            <img :src="tech.icon" :alt="tech.name" class="skill-icon">
-            <span class="skill-name">{{ tech.name }}</span>
+        <li
+          v-for="(tech, index) in comfortableTech"
+          :key="tech"
+          class="skill"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+        >
+          <img
+            :src="tech.icon"
+            :alt="tech.name"
+            class="skill-icon"
+          >
+          <span class="skill-name">{{ tech.name }}</span>
         </li>
       </ul>
-      <h3 class="skills-title">Also familiar With</h3>
+      <h3 class="skills-title">
+        Also familiar With
+      </h3>
       <ul class="skills-list">
-        <li v-for="(tech, index) in otherTech" :key="tech" class="skill" data-aos="fade-up" :data-aos-delay="index * 100">
-          <img :src="tech.icon" :alt="tech.name" class="skill-icon">
+        <li
+          v-for="(tech, index) in otherTech"
+          :key="tech"
+          class="skill"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+        >
+          <img
+            :src="tech.icon"
+            :alt="tech.name"
+            class="skill-icon"
+          >
           <span class="skill-name">{{ tech.name }}</span>
         </li>
       </ul>
     </section>
 
 
-    <section class="experience-section" ref="experienceSection">
-      <h3 class="experience-title" data-aos="fade-right">Experience Highlights</h3>
+    <section
+      ref="experienceSection"
+      class="experience-section"
+    >
+      <h3
+        class="experience-title"
+        data-aos="fade-right"
+      >
+        Experience Highlights
+      </h3>
       <ul class="experience-list">
-        <li v-for="exp in experienceHighlights" :key="exp.year" class="experience-row">
-          <span class="experience-year" data-aos="fade-right">{{ exp.year }}</span>
-          <span class="experience-desc" data-aos="fade-left">{{ exp.text }}</span>
+        <li
+          v-for="exp in experienceHighlights"
+          :key="exp.year"
+          class="experience-row"
+        >
+          <span
+            class="experience-year"
+            data-aos="fade-right"
+          >{{ exp.year }}</span>
+          <span
+            class="experience-desc"
+            data-aos="fade-left"
+          >{{ exp.text }}</span>
         </li>
       </ul>
     </section>
 
-    <section class="philosophy-section" ref="philosophySection">
-      <h3 class="philosophy-title" data-aos="fade-right">Work Philosophy</h3>
-      <p class="philosophy-text" data-aos="fade-up-left">
+    <section
+      ref="philosophySection"
+      class="philosophy-section"
+    >
+      <h3
+        class="philosophy-title"
+        data-aos="fade-right"
+      >
+        Work Philosophy
+      </h3>
+      <p
+        class="philosophy-text"
+        data-aos="fade-up-left"
+      >
         I believe in clean, maintainable code, open communication, and
         continuous learning. I’m a team player who loves collaborating and
         sharing knowledge.
       </p>
     </section>
 
-    <section class="interests-section" ref="interestSection">
-      <h3 class="interests-title" data-aos="fade-right">Personal Interests</h3>
+    <section
+      ref="interestSection"
+      class="interests-section"
+    >
+      <h3
+        class="interests-title"
+        data-aos="fade-right"
+      >
+        Personal Interests
+      </h3>
       <ul class="interests-list">
-        <li v-for="(interest, index) in personalInterests" :key="interest" class="interest" data-aos="fade-up" :data-aos-delay="index * 100">{{ interest }}</li>
+        <li
+          v-for="(interest, index) in personalInterests"
+          :key="interest"
+          class="interest"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+        >
+          {{ interest }}
+        </li>
       </ul>
     </section>
 
     <section class="awards-section">
-      <h3 class="awards-title" data-aos="fade-right">Awards and Honors</h3>
+      <h3
+        class="awards-title"
+        data-aos="fade-right"
+      >
+        Awards and Honors
+      </h3>
 
       <ul class="awards-list">
         <li
@@ -128,32 +217,54 @@ const awards = reactive([
           :data-aos-delay="index * 100"
         >
           <div class="award-content">
-            <h4 class="award-heading" data-aos="fade-right">{{ award.title }}</h4>
+            <h4
+              class="award-heading"
+              data-aos="fade-right"
+            >
+              {{ award.title }}
+            </h4>
             <div class="award-meta">
-              <div data-aos="fade-right">{{ award.company }}</div>
+              <div data-aos="fade-right">
+                {{ award.company }}
+              </div>
               <div>-</div>
-              <div data-aos="fade-left">{{ award.year }}</div>
+              <div data-aos="fade-left">
+                {{ award.year }}
+              </div>
             </div>
 
-            <div v-if="award.original" class="award-text-block"  data-aos="fade-up">
-              <p v-if="!award.showOriginal" class="award-description">
+            <div
+              v-if="award.original"
+              class="award-text-block"
+              data-aos="fade-up"
+            >
+              <p
+                v-if="!award.showOriginal"
+                class="award-description"
+              >
                 {{ award.translation || award.original }}
               </p>
-              <p v-else class="award-original">
+              <p
+                v-else
+                class="award-original"
+              >
                 {{ award.original }}
               </p>
 
               <button
-                @click="award.showOriginal = !award.showOriginal"
                 v-if="award.translation"
                 class="award-toggle-btn"
                 data-aos="fade-up-right"
+                @click="award.showOriginal = !award.showOriginal"
               >
                 {{ award.showOriginal ? 'Show translation' : 'Show original' }}
               </button>
             </div>
 
-            <p v-else class="award-description">
+            <p
+              v-else
+              class="award-description"
+            >
               {{ award.translation }}
             </p>
           </div>
@@ -162,9 +273,24 @@ const awards = reactive([
     </section>
 
 
-    <section class="cta-section" ref="contactSection" data-aos="fade-up">
-      <p class="cta-section-text" data-aos="fade-left">Want to know more or collaborate? Feel free to get in touch!</p>
-      <router-link class="link-button medium" to="/contact" data-aos="fade-right">Contact Me</router-link>
+    <section
+      ref="contactSection"
+      class="cta-section"
+      data-aos="fade-up"
+    >
+      <p
+        class="cta-section-text"
+        data-aos="fade-left"
+      >
+        Want to know more or collaborate? Feel free to get in touch!
+      </p>
+      <router-link
+        class="link-button medium"
+        to="/contact"
+        data-aos="fade-right"
+      >
+        Contact Me
+      </router-link>
     </section>
   </section>
 </template>
