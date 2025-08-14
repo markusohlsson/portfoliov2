@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import url('../variables.css');
 
 .contact-form {
   display: flex;
@@ -44,21 +44,19 @@
   padding: 0 4px;
 }
 
-.contact-form-input:focus + .contact-form-label {
-  top: -8px;
-  transform: translateY(0);
-  font-size: var(--font-size-sm);
-  color: var(--color-accent);
-  background-color: var(--secondary-color);
-}
-
+/* Less specific selector first */
 .contact-form-textarea + .contact-form-label {
   top: 12px;
   transform: translateY(0);
 }
 
-.contact-form-textarea:focus + .contact-form-label {
+/* More specific selectors next */
+.contact-form-input:focus + .contact-form-label,
+.contact-form-textarea:focus + .contact-form-label,
+.contact-form-input:not(:placeholder-shown) + .contact-form-label,
+.contact-form-textarea:not(:placeholder-shown) + .contact-form-label {
   top: -8px;
+  transform: translateY(0);
   font-size: var(--font-size-sm);
   color: var(--color-accent);
   background-color: var(--secondary-color);
@@ -83,13 +81,4 @@
 .contact-form-textarea:focus {
   border-color: var(--color-accent);
   outline: none;
-}
-
-.contact-form-input:not(:placeholder-shown) + .contact-form-label,
-.contact-form-textarea:not(:placeholder-shown) + .contact-form-label {
-  top: -8px;
-  transform: translateY(0);
-  font-size: var(--font-size-sm);
-  color: var(--color-accent);
-  background-color: var(--secondary-color);
 }

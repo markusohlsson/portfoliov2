@@ -1,9 +1,10 @@
-@import '../variables.css';
+@import url('../variables.css');
 
 .home {
 	.home-container {
 		width:90vw;
 		margin: 0 auto;
+
 		.home-projects-title,
 		.experience-title,
 		.education-title {
@@ -14,10 +15,12 @@
 			letter-spacing: -0.5px;
 			text-align: center;
 		}
+
 		.home-projects-container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			.home-projects {
 				max-width:80vw;
 				display: flex;
@@ -27,9 +30,11 @@
 				margin: 0 auto;
 			}
 		}	
+
 		.contact-cta {
 			margin-top: 40px;
 			text-align:center;
+
 			.contact-cta-text {
 				font-size: var(--font-size-md);
 				color: var(--primary-color);
@@ -38,26 +43,29 @@
 	} 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
 	.home {
 		.home-container {
 			width:70vw;
+
 			.home-projects-container {
-				
 				.home-projects {
 					flex-direction: row;
 				}
 			}
+
 			.experience {
 				display: flex;
 				flex-direction:column;
 				align-items: center;
 			}
+
 			.education {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 			}
+
 			.contact-cta {
 				display: flex;
 				flex-direction: column;

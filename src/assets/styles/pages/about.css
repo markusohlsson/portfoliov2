@@ -1,15 +1,17 @@
-@import '../variables.css';
+@import url('../variables.css');
+
 .about-wrapper {
 	max-width: 90vw;
 	margin: 0 auto;
+
 	.intro-section {
 		display: flex;
-		flex-direction: column;
+		flex-flow: column wrap;
 		align-items: center;
 		text-align: center;
 		gap: var(--space-2xl);
 		margin-bottom: var(--space-4xl);
-		flex-wrap: wrap;
+
 		.intro-photo-container {
 			.intro-photo {
 				width: 180px;
@@ -19,19 +21,22 @@
 				border: 3px solid var(--color-primary);
 			}
 		}
+
 		.intro-text-container {
 			.intro-text-title {
-				margin: 0 0 0.3rem 0;
+				margin: 0 0 0.3rem;
 				font-size: var(--font-size-2xl);
 				font-weight: var(--fw-bold);
 				color: var(--color-muted);
 			}
+
 			.intro-text-subtitle {
 				margin: 0 0 var(--space-md) 0;
 				font-weight: var(--fw-semibold);
 				font-size: var(--font-size-md);
 				color: var(--color-dark);
 			}
+
 			.intro-text-paragraph {
 				max-width: 600px;
 				line-height:1.5;
@@ -77,12 +82,14 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		.skills-list {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			gap: var(--space-sm);
 			width: 80vw;
+
 			.skill {
 				display: flex;
 				flex-direction: column;
@@ -90,17 +97,19 @@
 				align-items: center;
 				background-color: var(--secondary-color);
 				border-radius: var(--radius-md);
-				box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-				border: 1px solid rgba(0,0,0,0.05);
+				box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+				border: 1px solid rgb(0 0 0 / 5%);
 				height: 100px;
 				width: 100px;
 				font-size: var(--font-size-xs);
+
 				.skill-icon {
 					height:50px;
 					width: 50px;
 					object-fit: contain;
 					padding: 10px;
 				}
+
 				.skill-name {
 					text-align: center;
 				}
@@ -115,6 +124,7 @@
 				gap: var(--space-md);
 				margin-bottom: 0.7rem;
 				font-weight: var(--fw-medium);
+
 				.experience-year {
 					min-width:70px;
 					color:var(--color-muted);
@@ -127,18 +137,16 @@
 	}
 	
 	.awards-section {
-	.awards-title {
-		
-	}
-
 	.awards-list {
 			display: flex;
 			gap:var(--space-3xl);
 			flex-direction: column;
+
 		.award-item {
 			border-radius: var(--radius-md);
 			padding: var(--space-lg);
 			border-left: 4px solid var(--primary-color);
+
 		.award-content {
 			.award-heading {
 			font-weight: var(--fw-semibold);
@@ -181,6 +189,7 @@
 				color: var(--secondary-color);
 				background-color: var(--primary-color);
 			}
+
 			.award-toggle-btn:hover {
 				background-color: var(--color-accent);
 				cursor: pointer;
@@ -205,6 +214,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: var(--space-sm);
+
 			.interest {
 				background-color: var(--color-accent);
 				color:var(--secondary-color);
@@ -221,10 +231,11 @@
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
 	.about-wrapper {
 		margin-top: 85px;
 	}
+
 	.cta-section {
 		display: flex;
 		align-items: center;

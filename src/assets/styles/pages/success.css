@@ -1,4 +1,5 @@
-@import '../variables.css';
+@import url('../variables.css');
+
 .success-container {
 	display: flex;
 	flex-direction: column;
@@ -13,17 +14,19 @@
 	.success-image {
 		width: 80%;
 	}
+
 	.success-title {
 		font-size: var(--font-size-2xl);
 		margin-bottom: var(--space-md);
 	}
+
 	.success-text {
 		font-size: var(--font-size-md);
 		margin-bottom: var(--space-2xl);
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
 	.success-container {
 		min-height: 80vh;
 	}

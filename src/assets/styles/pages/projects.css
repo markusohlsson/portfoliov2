@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import url('../variables.css');
 
 /* Wrapper */
 .project-wrapper {
@@ -11,7 +11,7 @@
 }
 
 /* Responsive layout */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .project-row {
     flex-direction: column;
     align-items: flex-start;

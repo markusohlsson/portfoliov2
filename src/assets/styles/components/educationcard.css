@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import url('../variables.css');
 
 .education-card {
 	display:flex;
@@ -9,13 +9,15 @@
 	background-color: var(--secondary-color);
 	color:var(--primary-color);
 	border-left: 4px solid var(--primary-color);
-	box-shadow: 0 2px 8px rgba(93, 49, 54, 0.1);
+	box-shadow: 0 2px 8px rgb(93 49 54 / 10%);
+
 	.education-logo {
 		height: 60px;
 		width: auto;
 		border-radius: var(--radius-sm);
 		margin-bottom: var(--space-sm);
 	}
+
 	.education-date {
 		font-weight: var(--fw-bold);
 		font-size: var(--font-size-base);
@@ -23,10 +25,12 @@
 		text-transform: uppercase;
 		letter-spacing: 1.2px;
 	}
+
 	.education-title {
 		font-weight: var(--fw-semibold);
 		font-size: var(--font-size-md);
 	}
+
 	.education-school {
 	    font-weight: var(--fw-bold);
 		font-size: var(--font-size-base);
@@ -34,11 +38,13 @@
 	    font-style: italic;
 		margin-bottom: var(--space-xs);
 	}
+
 	.education-description {
 		font-size: var(--font-size-sm);
 		line-height: 1.5;
 		color: var(--color-light-text);
 	}
+
 	.education-link {
 		display: inline-block;
 		padding: var(--space-xs) var(--space-sm);
@@ -48,8 +54,9 @@
 		border-radius: var(--radius-md);
 		font-size: var(--font-size-sm);
 		font-weight:var(--fw-medium);
-		transition: background-color 0.2 ease;
+		transition: background-color 0.2s ease;
 	}
+
 	.education-link:hover {
 		background-color: var(--color-dark);
 	}

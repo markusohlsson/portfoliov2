@@ -1,24 +1,25 @@
-@import './variables.css';
+@import url('./variables.css');
 
-/* Components*/
-@import './components/navbar.css';
-@import './components/footer.css';
-@import './components/techstack.css';
-@import './components/projectcard.css';
-@import './components/experiencecard.css';
-@import './components/educationcard.css';
-@import './components/contactform.css';
-@import './components/button.css';
-@import './components/hero.css';
-@import './components/largeprojectcard.css';
+/* Components */
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+@import url('./components/techstack.css');
+@import url('./components/projectcard.css');
+@import url('./components/experiencecard.css');
+@import url('./components/educationcard.css');
+@import url('./components/contactform.css');
+@import url('./components/button.css');
+@import url('./components/hero.css');
+@import url('./components/largeprojectcard.css');
+@import url('./components/techstacklarge.css');
 
 /* Pages */
-@import './pages/about.css';
-@import './pages/contact.css';
-@import './pages/success.css';
-@import './pages/home.css';
-@import './pages/projects.css';
-@import './pages/projectdetails.css';
+@import url('./pages/about.css');
+@import url('./pages/contact.css');
+@import url('./pages/success.css');
+@import url('./pages/home.css');
+@import url('./pages/projects.css');
+@import url('./pages/projectdetails.css');
 
 body {
 	font-family: var(--base-font);
@@ -28,6 +29,7 @@ body {
 	font-style: normal;
   	margin: 0;
 }
+
 html, body {
 	overflow-x: hidden;
 }
@@ -39,9 +41,6 @@ html, body {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip-path: inset(0 0 0 0);
   border: 0;
-}
-@media screen and (min-width: 768px) {
-
 }

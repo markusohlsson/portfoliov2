@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import url('../variables.css');
 
 .projectdetails-container {
     display: flex;
@@ -6,9 +6,6 @@
     align-items: center;
     max-width: 80vw;
     margin: 0 auto;
-}
-
-.projectdetails-image-container {
 }
 
 .projectdetails-image {
@@ -62,27 +59,24 @@
     font-size: var(--font-size-sm)
 }
 
-.projectdetails-feature-item {
-}
-
 .projectdetails-notfound {
     text-align: center;
     height: 70vh;
+
     p {
     font-size: var(--font-size-4xl);
     font-weight: var(--fw-extrabold);
 
     }
 }
+
 .cta-section {
 	text-align:center;
     margin-bottom: var(--space-3xl);
 }
 
 
-@media screen and (min-width: 768px) {
-    .projectdetails-image-container {
-}
+@media screen and (width >= 768px) {
 .projectdetails-title {
     font-size:var(--font-size-2xl);
     font-weight:var(--fw-extrabold);
@@ -97,11 +91,13 @@
     width:50%;
     font-size:var(--font-size-md);
 }
+
 .projectdetails-section-title {
     text-decoration: underline;
     font-size:var(--font-size-lg);
     font-weight: var(--fw-bold);
 }
+
 .projectdetails-feature-list {
     font-size: var(--font-size-md)
 }
@@ -110,6 +106,5 @@
     display: flex;
     gap: var(--space-sm);
 }
-
 
 }

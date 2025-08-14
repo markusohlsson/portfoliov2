@@ -1,67 +1,49 @@
-@import '../variables.css';
+@import url('../variables.css');
 
 .projectcard {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	border-radius: var(--radius-md);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    border: 1px solid rgba(0,0,0,0.05);
-	margin: var(--space-md);
-	height:400px;
-	width:350px;
-	padding:var(--space-md);
-	.projectcard-image-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+  border: 1px solid rgb(0 0 0 / 5%);
+  margin: var(--space-md);
+  height: 400px;
+  width: 350px;
+  padding: var(--space-md);
 
-		.projectcard-image {
-			object-fit: contain;
-			height:200px;
-			margin:var(--space-md);
-			border: 1px solid var(--primary-color);
-			border-radius: 8px;
-		}
-		svg {
-			height:100px;
-			width: 100px;
-			animation: spin 4s infinite linear;
-  			-webkit-animation: spin 4s infinite linear;
-    	}
-	}
-	.projectcard-title {
-		margin: var(--space-xs);
-	}
-	.projectcard-description {
-		width:80%;
-		font-style: italic;
-	}
+  .projectcard-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .projectcard-image {
+      object-fit: contain;
+      height: 200px;
+      margin: var(--space-md);
+      border: 1px solid var(--primary-color);
+      border-radius: 8px;
+    }
+  }
+
+  .projectcard-title {
+    margin: var(--space-xs);
+  }
+
+  .projectcard-description {
+    width: 80%;
+    font-style: italic;
+  }
 }
 
 .projectcard:hover {
-	transform: scale(1.1);
-	cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-@keyframes spin {
-	0% {
-		-moz-transform:rotate(320deg);
-		-webkit-transform:rotate(320deg);
-		-o-transform:rotate(320deg);
-		-ms-transform:rotate(320deg);
-	}
-	  100% {
-		-moz-transform:rotate(680deg);
-		-webkit-transform:rotate(680deg);
-		-o-transform:rotate(680deg);
-		-ms-transform:rotate(680deg); 
-  	}
-}
-
-@media screen and (min-width: 768px) {
-	.projectcard {
-		padding:15px;
-	}
+@media screen and (width >=768px) {
+  .projectcard {
+    padding: 15px;
+  }
 }
