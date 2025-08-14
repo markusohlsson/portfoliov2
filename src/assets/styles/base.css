@@ -17,7 +17,7 @@
 @import './pages/success.css';
 @import './pages/home.css';
 @import './pages/projects.css';
-
+@import './pages/projectdetails.css';
 
 body {
 	font-family: var(--base-font);

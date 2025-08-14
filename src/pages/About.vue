@@ -1,8 +1,13 @@
 <script setup>
 import { reactive } from 'vue';
-const skills = [
-  'Vue.js', 'Laravel', 'JavaScript', 'CSS/SCSS', 'PHP', 'MySQL', 'Git', 'REST APIs'
-]
+import { techs, comfortableTech } from '../data/techs'
+
+const allTechArray = Object.values(techs)
+
+// Filter out comfortable techs from allTechArray
+const otherTech = allTechArray.filter(
+  t => !comfortableTech.some(ct => ct.name === t.name)
+)
 
 const experienceHighlights = [
   { year: '2024', text: 'Fullstack Developer Consultant at Webhallen' },
@@ -68,11 +73,22 @@ const awards = reactive([
     </div>
 
     <section class="skills-section" ref="skillsSection" >
-      <h3 class="skills-title" data-aos="fade-right">My Skills</h3>
+      <h3 class="skills-title" data-aos="fade-right">Comfortable Tech</h3>
       <ul class="skills-list">
-        <li v-for="(skill, index) in skills" :key="skill" class="skill" data-aos="fade-up" :data-aos-delay="index * 100">{{ skill }}</li>
+        <li v-for="(tech, index) in comfortableTech" :key="tech" class="skill" data-aos="fade-up" :data-aos-delay="index * 100">
+            <img :src="tech.icon" :alt="tech.name" class="skill-icon">
+            <span class="skill-name">{{ tech.name }}</span>
+        </li>
+      </ul>
+      <h3 class="skills-title">Also familiar With</h3>
+      <ul class="skills-list">
+        <li v-for="(tech, index) in otherTech" :key="tech" class="skill" data-aos="fade-up" :data-aos-delay="index * 100">
+          <img :src="tech.icon" :alt="tech.name" class="skill-icon">
+          <span class="skill-name">{{ tech.name }}</span>
+        </li>
       </ul>
     </section>
+
 
     <section class="experience-section" ref="experienceSection">
       <h3 class="experience-title" data-aos="fade-right">Experience Highlights</h3>
@@ -148,7 +164,7 @@ const awards = reactive([
 
     <section class="cta-section" ref="contactSection" data-aos="fade-up">
       <p class="cta-section-text" data-aos="fade-left">Want to know more or collaborate? Feel free to get in touch!</p>
-      <span class="link-button"><router-link  to="/contact" data-aos="fade-right">Contact Me</router-link></span>
+      <router-link class="link-button" to="/contact" data-aos="fade-right">Contact Me</router-link>
     </section>
   </section>
 </template>

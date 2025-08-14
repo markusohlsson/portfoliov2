@@ -12,11 +12,8 @@
       front-end and back-end development, including HTML5, CSS, JavaScript, PHP, and SQL. I have also gained experience
       integrating various business systems and payment solutions.
     </p>
-
-    <span class="link-button" data-aos="fade-up-right">
-    <a href="https://medieinstitutet.se/utbildningar/webbutvecklare-inom-e-handel/" target="_blank" rel="noopener noreferrer">
+    <a class="link-button" href="https://medieinstitutet.se/utbildningar/webbutvecklare-inom-e-handel/" target="_blank" rel="noopener noreferrer" data-aos="fade-up-right">
        Read More<span class="sr-only"> about the Webbutvecklare inom e-handel program at Medieinstitutet</span>
-    </a>
-    </span>
+    </a>  
   </div>
 </template>

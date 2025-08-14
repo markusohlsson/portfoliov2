@@ -7,10 +7,11 @@ import EducationCard from '../components/EducationCard.vue';
 import ExperienceCard from '../components/ExperienceCard.vue';
 import Hero from '../components/Hero.vue';
 
-    const projects = [
-        {name: 'Placeholder', image: '', description: 'Work in progress, coming soon'},
-        {name: 'Placeholder', image: '', description: 'Work in progress, coming soon'}
-    ];
+/* Project Images */
+
+import omdb from '../assets/img/projects/omdb.png'
+
+import { projects } from '../data/projects';
 
     
     const experiences = [
@@ -51,11 +52,11 @@ import Hero from '../components/Hero.vue';
             <div class="home-projects-container" ref="projectSection">
                 <h3 class="home-projects-title">Featured Projects</h3>
                 <div class="home-projects">
-                    <template v-for="project in projects">
-                        <ProjectCard :title="project.name" :image="project.image" :description="project.description" />
+                    <template v-for="project in projects.filter(p => p.featured)" :key="project.id">
+                        <ProjectCard :project="project"/>
                     </template>
                 </div>
-                <span class="link-button"><router-link to="/Projects">See all projects</router-link></span>
+                <router-link to="/projects" class="link-button">See all projects</router-link>
             </div>
             <div class="experience" ref="experienceSection">
                 <h4 class="experience-title">Work Experience</h4>
@@ -69,7 +70,7 @@ import Hero from '../components/Hero.vue';
             </div>
             <div class="contact-cta" ref="contactSection" data-aos="fade-up">
                 <p class="contact-cta-text" data-aos="fade-left">Want to collaborate or just say hi?</p>
-                <span class="link-button" data-aos="fade-right"><router-link to="/contact">Contact me here</router-link></span>
+                <router-link to="/contact" class="link-button" data-aos="fade-right">Contact me here</router-link>
             </div>
         </div>
     </div>

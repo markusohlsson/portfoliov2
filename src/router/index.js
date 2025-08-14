@@ -5,18 +5,24 @@ import Projects from '../pages/Projects.vue';
 import Contact from '../pages/Contact.vue';
 import About from '../pages/About.vue';
 import Success from '../pages/Success.vue';
+import ProjectDetails from '../pages/ProjectDetails.vue';
 
 const routes = [
     { path: '/', component: Home, name: 'Home'},
     { path: '/projects', component: Projects, name: 'Projects'},
-    { path: '/Contact', component: Contact, name: 'Contact'},
-    { path: '/About', component: About, name: 'About'},
-    { path: '/Contact/Success', component: Success, name: 'Success'}
+    { path: '/projects/:id', component: ProjectDetails, name: 'ProjectDetails', props: true},
+    { path: '/contact', component: Contact, name: 'Contact'},
+    { path: '/about', component: About, name: 'About'},
+    { path: '/contact/success', component: Success, name: 'Success'},
+
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
+     scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  }
 });
 
 export default router;

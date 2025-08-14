@@ -4,17 +4,25 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	border-radius: var(--radius-md);
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     border: 1px solid rgba(0,0,0,0.05);
 	margin: var(--space-md);
-	height:300px;
+	height:400px;
 	width:400px;
-	.projectcard-image {
+	.projectcard-image-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		.projectcard-image {
+			object-fit: contain;
+			height:200px;
+			margin:var(--space-md);
+			border: 1px solid var(--primary-color);
+			border-radius: 8px;
+		}
 		svg {
 			height:100px;
 			width: 100px;
@@ -25,10 +33,13 @@
 	.projectcard-title {
 		margin: var(--space-xs);
 	}
+	.projectcard-description {
+		width:80%;
+	}
 }
 
 .projectcard:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 	cursor: pointer;
 }
 

@@ -16,7 +16,7 @@
             <textarea class="contact-form-textarea" id="message" name="message" required placeholder=" "></textarea>
             <label class="contact-form-label" for="message">Message</label>
         </div>
-        <input type="hidden" name="_next" value="https://www.ohlsson.dev/Contact/Success">
+        <input type="hidden" name="_next" value="https://www.ohlsson.dev/contact/success">
         <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="contact-button" data-aos="fade-up-left">Send Message</button>
     </form>

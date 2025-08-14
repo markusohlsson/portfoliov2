@@ -3,9 +3,9 @@
         <div class="footer-top">
             <ul class="footer-navigation">
                 <li class="footer-link"><router-link to="/">Home</router-link></li>
-                <li class="footer-link"><router-link to="/Projects">Projects</router-link></li>
-                <li class="footer-link"><router-link to="/About">About</router-link></li>
-                <li class="footer-link"><router-link to="/Contact">Contact</router-link></li>
+                <li class="footer-link"><router-link to="/projects">Projects</router-link></li>
+                <li class="footer-link"><router-link to="/about">About</router-link></li>
+                <li class="footer-link"><router-link to="/contact">Contact</router-link></li>
             </ul>
         </div>
         <div class="footer-middle">

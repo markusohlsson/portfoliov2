@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128">
+  <title>Tech Stack Placeholder</title>
+  <desc>A neutral placeholder icon for missing tech stack logos. Tint with CSS using currentColor.</desc>
+  
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="64,24 104,44 64,64 24,44"/>
+    <polygon points="64,44 104,64 64,84 24,64" opacity="0.8"/>
+    <polygon points="64,64 104,84 64,104 24,84" opacity="0.6"/>
+  </g>
+</svg>

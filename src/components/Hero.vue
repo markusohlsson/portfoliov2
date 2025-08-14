@@ -21,12 +21,8 @@
         </p>
 
         <div class="hero-button-container" data-aos="zoom-in" data-aos-delay="500">
-          <span class="link-button">
-            <router-link to="/About">Read more about me</router-link>
-          </span>
-          <span class="link-button secondary">
-            <router-link to="/Projects">View my projects</router-link>
-          </span>
+            <router-link to="/about" class="link-button">Read more about me</router-link>
+            <router-link to="/projects" class="link-button secondary">View my projects</router-link>
         </div>
       </div>
     </div>
