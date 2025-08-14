@@ -19,6 +19,7 @@ import vueIcon from '../assets/icons/vue.svg';
 import placeholderIcon from '../assets/icons/techstack-placeholder.svg'
 import kafkaIcon from '../assets/icons/kafka.svg';
 import jiraIcon from '../assets/icons/jira.svg';
+import eslintIcon from '../assets/icons/eslint.svg';
 
 export const techs = {
   vue: { name: 'Vue 3', description: 'Core framework for building the SPA.', icon: vueIcon },
@@ -46,7 +47,8 @@ export const techs = {
   dotenv: { name: 'dotenv', description: 'Environment variable management.', icon: dotenvIcon },
   nodemon: { name: 'Nodemon', description: 'Auto-reload during development.', icon: nodemonIcon },
   kafka: {name: 'Apache Kafka', description: 'Distributed platform for streaming and processing real-time data.', icon: kafkaIcon},
-  jira: {name: 'Jira', description: 'Project management and issue-tracking tool for agile teams.', icon: jiraIcon}
+  jira: {name: 'Jira', description: 'Project management and issue-tracking tool for agile teams.', icon: jiraIcon},
+  eslint: {name: 'ESLint', description: 'Linting tool for JS and Vue; catches errors, enforces style, and improves code quality.', icon: eslintIcon}
 };
 
 
