@@ -27,8 +27,8 @@ export const projects = [
   {
     id: 'portfolio',
     title: 'Portfolio',
-    shortDescription: 'A modern, responsive personal portfolio website.',
-    longDescription: 'A modern, responsive personal portfolio website built with Vue 3, Vite, and animated UI enhancements. Designed to showcase my skills and projects as a Full Stack Developer.',
+    shortDescription: 'A modern, responsive personal portfolio built with Vue 3 and Vite to showcase skills, projects, and professional experience.',
+    longDescription: 'This portfolio website is a full-featured, responsive web application built with Vue 3 and Vite, designed to highlight my skills and projects as a Full Stack Developer. It features smooth scroll animations with AOS, dynamic typing effects with Typed.js, and a clean, modular component structure using the Composition API. The project emphasizes performance, maintainability, and a modern user experience, with client-side routing powered by Vue Router and a lightweight, fast development setup. Additional tooling includes ESLint and Stylelint for code quality, ensuring a professional and polished codebase.',
     image: portfolio,
     demo: 'https://www.ohlsson.dev',
     repo: 'https://github.com/markusohlsson/portfoliov2',
