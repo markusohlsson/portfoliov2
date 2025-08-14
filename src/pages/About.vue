@@ -164,7 +164,7 @@ const awards = reactive([
 
     <section class="cta-section" ref="contactSection" data-aos="fade-up">
       <p class="cta-section-text" data-aos="fade-left">Want to know more or collaborate? Feel free to get in touch!</p>
-      <router-link class="link-button" to="/contact" data-aos="fade-right">Contact Me</router-link>
+      <router-link class="link-button medium" to="/contact" data-aos="fade-right">Contact Me</router-link>
     </section>
   </section>
 </template>

@@ -37,12 +37,6 @@
   display: flex;
   justify-content: center;
   gap: var(--space-md);
-
-  .link-button {
-    height: 30px;
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -64,13 +58,5 @@
     }
     .description {
         font-size: var(--font-size-lg);
-    }
-    .link-button, .secondary{
-        width: 250px;
-        display: flex;
-        justify-content: center;
-        border-radius:var(--radius-md);
-        font-size: var(--font-size-base);
-        font-weight: var(--fw-bold);
     }
 }

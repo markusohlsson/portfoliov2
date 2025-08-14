@@ -1,28 +1,99 @@
-@import '../variables.css';
-
 .link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-color);
-  color:var(--secondary-color);
-  border-radius: var(--radius-pill);
-  padding:var(--space-sm);
+  color: var(--secondary-color);
+  border-radius: var(--radius-md);
   border: 1px solid var(--primary-color);
-  width: fit-content;
-  font-size: var(--font-size-xs);
-  text-decoration:none;
-}
-.link-button:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: 44px;
 }
 
+/* Hover & focus */
+.link-button:hover,
+.link-button:focus {
+  background-color: #6e4046;
+  color: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+/* Secondary variant */
 .link-button.secondary {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  
+  border-color: var(--primary-color);
 }
-.link-button.secondary:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.link-button.secondary:hover,
+.link-button.secondary:focus {
+  background-color: rgba(93, 49, 54, 0.1);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Disabled */
+.link-button[aria-disabled="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Fixed-width size variants */
+.link-button.small {
+  width: 100px;  /* fixed width */
+  font-size: var(--font-size-xs);
+  padding: var(--space-xs) var(--space-sm);
+  min-height: 36px;
+  border-radius: var(--radius-sm);
+}
+
+.link-button.medium {
+  width: 140px; /* fixed width */
+  font-size: var(--font-size-sm);
+  padding: var(--space-sm) var(--space-md);
+  min-height: 44px;
+  border-radius: var(--radius-md);
+}
+
+.link-button.large {
+  width: 180px; /* fixed width */
+  font-size: var(--font-size-md);
+  padding: var(--space-md) var(--space-lg);
+  min-height: 50px;
+  border-radius: var(--radius-md);
+}
+
+/* Desktop tweaks */
+@media screen and (min-width: 768px) {
+  .link-button.small {
+    width: 120px;
+    font-size: var(--font-size-sm);
+    padding: var(--space-sm) var(--space-md);
+    min-height: 40px;
+  }
+
+  .link-button.medium {
+    width: 160px;
+    font-size: var(--font-size-md);
+    padding: var(--space-sm) var(--space-lg);
+    min-height: 48px;
+  }
+
+  .link-button.large {
+    width: 200px;
+    font-size: var(--font-size-lg);
+    padding: var(--space-md) var(--space-xl);
+    min-height: 56px;
+  }
 }

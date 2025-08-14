@@ -7,6 +7,7 @@
 
         <h4 class="projectcard-title" data-aos="fade-up">{{project.title}}</h4>
         <p class="projectcard-description" data-aos="fade-up">{{project.shortDescription}}</p>
+        <router-link class="link-button small" :to="'/projects/' + project.id" data-aos="fade-up-right">Details</router-link>
     </div>
 </template>
 

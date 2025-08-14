@@ -56,7 +56,7 @@ import { projects } from '../data/projects';
                         <ProjectCard :project="project"/>
                     </template>
                 </div>
-                <router-link to="/projects" class="link-button">See all projects</router-link>
+                <router-link to="/projects" class="link-button medium secondary" data-aos="fade-up">All projects</router-link>
             </div>
             <div class="experience" ref="experienceSection">
                 <h4 class="experience-title">Work Experience</h4>
@@ -70,7 +70,7 @@ import { projects } from '../data/projects';
             </div>
             <div class="contact-cta" ref="contactSection" data-aos="fade-up">
                 <p class="contact-cta-text" data-aos="fade-left">Want to collaborate or just say hi?</p>
-                <router-link to="/contact" class="link-button" data-aos="fade-right">Contact me here</router-link>
+                <router-link to="/contact" class="link-button medium" data-aos="fade-right">Contact me</router-link>
             </div>
         </div>
     </div>

@@ -10,8 +10,8 @@
         <p class="projectdetails-description" data-aos="fade-right">{{ project.longDescription }}</p>
 
         <div class="projectdetails-links">
-                <a :href="project.demo" target="_blank" class="link-button" data-aos="fade-right">Live Demo</a>
-                <a :href="project.repo" target="_blank" class="link-button secondary" data-aos="fade-left">Repository</a>
+                <a :href="project.demo" target="_blank" class="link-button medium" data-aos="fade-right">Live Demo</a>
+                <a :href="project.repo" target="_blank" class="link-button medium secondary" data-aos="fade-left">Repository</a>
         </div>
         
         <div class="projectdetails-section">
@@ -51,7 +51,6 @@
         </section>
     </div>
 
-    <!-- Fallback -->
     <div v-else class="projectdetails-notfound">
         <p >Project not found</p>
         <router-link to="/projects">Return to projects...</router-link>

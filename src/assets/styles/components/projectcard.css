@@ -10,7 +10,8 @@
     border: 1px solid rgba(0,0,0,0.05);
 	margin: var(--space-md);
 	height:400px;
-	width:400px;
+	width:350px;
+	padding:var(--space-md);
 	.projectcard-image-container {
 		display: flex;
 		justify-content: center;
@@ -35,6 +36,7 @@
 	}
 	.projectcard-description {
 		width:80%;
+		font-style: italic;
 	}
 }
 
@@ -56,4 +58,10 @@
 		-o-transform:rotate(680deg);
 		-ms-transform:rotate(680deg); 
   	}
+}
+
+@media screen and (min-width: 768px) {
+	.projectcard {
+		padding:15px;
+	}
 }
