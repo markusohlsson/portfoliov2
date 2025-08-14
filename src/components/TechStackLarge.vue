@@ -19,7 +19,7 @@
         class="projectdetails-tech-description"
         :data-aos="aos"
       >
-        {{ tech.description }}p
+        {{ tech.description }}
       </p>
     </div>
   </li>
