@@ -8,8 +8,8 @@ export const projects = [
   {
     id: 'omdb',
     title: 'OMDB Movie Search',
-    shortDescription: 'A full-stack web app for searching movies using the OMDB API.',
-    longDescription: 'A full-stack web application that allows users to search for movies and fetch detailed movie information using the OMDB API. This project demonstrates a clean separation between frontend and backend with modern web technologies.',
+    shortDescription: 'A full-stack web app that lets users search for movies and fetch detailed information from the OMDB API.',
+    longDescription: 'The OMDB Movie Search App is a full-stack web application that allows users to search for movies and access detailed information from the OMDB API. It features a clean separation between frontend and backend, with a modern, responsive UI built using Vue 3, Tailwind CSS, and Pinia for state management. The backend, powered by Node.js and Express 5, efficiently handles API requests with caching, rate-limiting, and secure environment variable management. Users can enjoy fast, paginated search results and structured movie details. Please note that, due to the free hosting used for the backend demo, the initial request may take up to 30 seconds.',
     image: omdb,
     demo: 'https://ohlssondevomdb.netlify.app/',
     repo: 'https://github.com/markusohlsson/omdb',

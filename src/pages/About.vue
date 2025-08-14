@@ -71,12 +71,7 @@ const awards = reactive([
           class="intro-text-paragraph"
           data-aos="fade-up"
         >
-          My journey into development started with a curiosity for how things work
-          on the web—and turned into a passion for building solutions that make
-          people’s lives easier. I love tackling complex problems, crafting clean
-          code, and seeing projects come to life from concept to launch. Outside of
-          coding, I’m always exploring new tools and keeping up with modern
-          technologies to bring fresh ideas to every project.
+          I’m a fullstack developer who enjoys turning ideas into practical, user-friendly solutions. I focus on writing clean, maintainable code, solving challenging problems, and staying up-to-date with modern technologies. Outside of coding, I play golf, follow football, and love exploring new tech.
         </p>
       </div>
     </div>

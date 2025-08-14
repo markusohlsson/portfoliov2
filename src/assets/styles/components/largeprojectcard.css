@@ -73,4 +73,7 @@
   .project-image-container {
     max-width: 300px;
   }
+  .project-text {
+      width:50%;
+  }
 }

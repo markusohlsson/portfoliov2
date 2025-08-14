@@ -34,9 +34,7 @@
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          I build high-quality web and mobile applications with a focus on
-          user experience and performance. Explore my portfolio to see some
-          of my recent projects.
+          I build high-quality web applications with a focus on user experience and performance. Explore my portfolio to see some of my recent projects.
         </p>
 
         <div
