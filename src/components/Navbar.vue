@@ -57,6 +57,18 @@
                 <Mail />Contact
               </router-link>
             </li>
+            <li class="settings">
+              <Sun class="settings-icon" />
+              <label class="switch">
+                <input 
+                  type="checkbox" 
+                  :checked="settings.darkmode" 
+                  @change="settings.toggleDarkMode" 
+                >
+                <span class="slider" />
+              </label>
+              <Moon class="settings-icon" />
+            </li>
           </ul>
         </div>
       </Transition>
@@ -94,14 +106,26 @@
             <Mail />Contact
           </router-link>
         </li>
+        <li class="settings">
+          <button
+            class="darkmode-btn"
+            @click="settings.toggleDarkMode"
+          >
+            <Moon v-if="settings.darkmode" />
+            <Sun v-else />
+          </button>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script setup>
-import { House, FolderKanban, User, Mail, Menu, X } from 'lucide-vue-next'
+import { House, FolderKanban, User, Mail, Menu, X, Sun, Moon } from 'lucide-vue-next'
+import { useSettingsStore } from "../stores/settings"
 import { ref } from 'vue'
 
 const isOpen = ref(false)
+const settings = useSettingsStore()
+settings.init()
 </script>

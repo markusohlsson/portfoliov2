@@ -1,18 +1,19 @@
 <script setup>
 import ProjectCard from '../components/ProjectCard.vue';
 import TechStack from '../components/TechStack.vue';
-import whlogo from '../assets/icons/wh.svg';
+import whlogoBlack from '../assets/icons/wh.svg';
+import whlogoWhite from '../assets/icons/wh_white.svg';
 import EducationCard from '../components/EducationCard.vue';
 import ExperienceCard from '../components/ExperienceCard.vue';
 import Hero from '../components/Hero.vue';
 import { projects } from '../data/projects';
-
     
     const experiences = [
     {
         workplace: 'Webhallen Sverige AB',
         position: 'Fullstack Developer Consultant',
-        image: whlogo,
+        imageLight: whlogoWhite,
+        imageDark: whlogoBlack,
         description: 'Worked as part of an agile team to enhance the webshop. Collaborated with UX designers and departments to align technical solutions with user and business needs.',
         skills: ['Laravel', 'JavaScript', 'Vue.js', 'MySQL', 'SCSS', 'Git', 'JIRA'],
         year: 'May 2024 - Current'
@@ -20,7 +21,8 @@ import { projects } from '../data/projects';
     {
         workplace: 'Webhallen Sverige AB',
         position: 'Fullstack Developer Internship',
-        image: whlogo,
+        imageLight: whlogoWhite,
+        imageDark: whlogoBlack,
         description: 'Completed an internship during studies focusing on both frontend and backend development. Gained experience working in an agile team and was later hired as a consultant.',
         skills: ['Laravel', 'Vue.js', 'PHP', 'JavaScript', 'MySQL', 'Git'],
         year: 'Oct 2023 - May 2024'
@@ -28,14 +30,13 @@ import { projects } from '../data/projects';
     {
         workplace: 'Webhallen Sverige AB',
         position: 'Customer Service Agent',
-        image: whlogo,
+        imageLight: whlogoWhite,
+        imageDark: whlogoBlack,
         description: 'Handled customer inquiries via chat, email, phone, and forums. Responsible for troubleshooting and managing delivery and order issues.',
         skills: ['Customer Support', 'Troubleshooting', 'Communication'],
         year: 'Sep 2020 - Sep 2022'
     },
     ];
-
-
 </script>
 
 <template>
@@ -102,7 +103,7 @@ import { projects } from '../data/projects';
         </p>
         <router-link
           to="/contact"
-          class="link-button medium"
+          class="link-button medium secondary"
           data-aos="fade-right"
         >
           Contact me

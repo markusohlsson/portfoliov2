@@ -280,7 +280,7 @@ const awards = reactive([
         Want to know more or collaborate? Feel free to get in touch!
       </p>
       <router-link
-        class="link-button medium"
+        class="link-button medium secondary"
         to="/contact"
         data-aos="fade-right"
       >

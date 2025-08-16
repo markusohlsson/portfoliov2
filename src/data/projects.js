@@ -33,7 +33,7 @@ export const projects = [
     demo: 'https://www.ohlsson.dev',
     repo: 'https://github.com/markusohlsson/portfoliov2',
     featured: true,
-    frontendTech: [techs.vue, techs.vite, techs.vueRouter, techs.aos, techs.typedjs, techs.lucide, techs.css, techs.eslint],
+    frontendTech: [techs.vue, techs.vite, techs.vueRouter, techs.aos, techs.typedjs, techs.lucide, techs.css, techs.eslint, techs.pinia],
     backendTech: null,
     features: [
       'Fully responsive design, optimized for mobile, tablet, and desktop.',

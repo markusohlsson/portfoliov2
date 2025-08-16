@@ -105,9 +105,9 @@
     <div>
       <router-link
         to="/projects"
-        class="link-button"
+        class="link-button medium"
       >
-        View my other projects
+        All projects
       </router-link>
     </div>
     <section
@@ -123,7 +123,7 @@
       </p>
       <router-link
         to="/contact"
-        class="link-button"
+        class="link-button medium secondary"
         data-aos="fade-right"
       >
         Let me know

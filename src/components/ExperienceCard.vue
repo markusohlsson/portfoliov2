@@ -6,7 +6,7 @@
     >
       <img
         class="work-experience-logo"
-        :src="exp.image"
+        :src="settings.darkmode ? exp.imageLight : exp.imageDark"
         :alt="exp.workplace"
       >
       <div data-aos="fade-up-right">
@@ -54,13 +54,17 @@
 
 <script setup>
 import { defineProps } from 'vue';
+import { useSettingsStore } from '../stores/settings';
+const settings = useSettingsStore();
+
 defineProps({
   exp: {
     type: Object,
     default: () => ({
       workplace: '',
       position: '',
-      image: '',
+      imageLight: '',
+      imageDark: '',
       description: '',
       year: '',
       skills: []
