@@ -227,6 +227,9 @@
 						width:50px;
 						border: 1px solid var(--secondary-color);
 						border-radius: var(--radius-fifty);
+						display: flex;
+						justify-content: center;
+						align-items: center;
 					}
 
 					.darkmode-btn:hover {
