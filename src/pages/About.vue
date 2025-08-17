@@ -166,9 +166,7 @@ const awards = reactive([
         class="philosophy-text"
         data-aos="fade-up-left"
       >
-        I believe in clean, maintainable code, open communication, and
-        continuous learning. I’m a team player who loves collaborating and
-        sharing knowledge.
+        I believe in clean, maintainable code, open communication, and continuous learning. I enjoy collaborating in teams and sharing knowledge to create the best solutions.
       </p>
     </section>
 

@@ -81,6 +81,7 @@
       name="_captcha"
       value="false"
     >
+    <span class="contact-privacy">By submitting this form, you agree to our <router-link to="/privacy-policy">Privacy Policy</router-link>.</span>
     <button
       type="submit"
       class="contact-button"

@@ -210,6 +210,7 @@
 					font-weight: var(--fw-bold);
 					font-size: var(--font-size-md);
 					border-radius: var(--radius-md);
+					position:relative;
 				}
 
 				.navigation-list-item:hover {
@@ -217,6 +218,18 @@
 					background-color: var(--secondary-color);
 					border-radius: var(--radius-md);
 					transition: background-color 0.5s ease;
+					transform: translateY(-1px);
+				}
+
+				.router-link-active.navigation-list-item::after {
+					content: "";
+					background-color: var(--secondary-color);
+					height:2px;
+					width:80%;
+					position: absolute;
+					bottom: 25%;
+					right:10%;
+					border-radius: var(--radius-sm);
 				}
 
 				.settings {

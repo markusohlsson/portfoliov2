@@ -52,7 +52,10 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <span>Built by Markus Ohlsson</span>
+      <span>© 2025 Markus Ohlsson | <router-link
+        class="privacy-link"
+        to="/privacy-policy"
+      >Privacy Policy</router-link></span>
     </div>
   </div>
 </template>

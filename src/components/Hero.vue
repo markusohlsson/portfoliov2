@@ -74,7 +74,7 @@ onMounted(() => {
     backSpeed: 50,
     showCursor: true,
     cursorChar: '|',
-    loop: false,
+    loop: true,
     startDelay: 900,
   })
 })

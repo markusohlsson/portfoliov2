@@ -27,10 +27,9 @@
       class="education-description"
       data-aos="fade-up-left"
     >
-      During the vocational education program in E-commerce Web Development, I learned to work with databases,
-      build responsive websites, and create as well as manage APIs. The focus has been on expanding my skills in both
-      front-end and back-end development, including HTML5, CSS, JavaScript, PHP, and SQL. I have also gained experience
-      integrating various business systems and payment solutions.
+      Completed an 82-week vocational program focused on both frontend and backend development: HTML5, CSS, JavaScript, PHP, and SQL. Training included working with databases, building responsive websites, developing and managing APIs, and integrating business systems and payment solutions.
+
+      The program included a 25-week internship at Webhallen Sverige AB, where I gained hands-on experience in webshop development as part of an agile team.
     </p>
     <a
       class="link-button"

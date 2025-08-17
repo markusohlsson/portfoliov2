@@ -9,6 +9,14 @@
   max-width: 500px; 
 }
 
+  .contact-privacy {
+    text-align: center;
+
+    a {
+      color: inherit;
+    }
+  }
+
 .contact-form-row {
   position: relative;
   width: 100%;

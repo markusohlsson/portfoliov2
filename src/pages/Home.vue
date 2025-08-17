@@ -14,7 +14,7 @@ import { projects } from '../data/projects';
         position: 'Fullstack Developer Consultant',
         imageLight: whlogoWhite,
         imageDark: whlogoBlack,
-        description: 'Worked as part of an agile team to enhance the webshop. Collaborated with UX designers and departments to align technical solutions with user and business needs.',
+        description: 'Enhanced the company webshop as part of an agile team, collaborating with UX designers and departments to deliver user-focused, business-driven solutions. Built and maintained features using Laravel, Vue.js, MySQL, and SCSS, with JIRA for agile task management.',
         skills: ['Laravel', 'JavaScript', 'Vue.js', 'MySQL', 'SCSS', 'Git', 'JIRA'],
         year: 'May 2024 - Current'
     },
@@ -23,7 +23,7 @@ import { projects } from '../data/projects';
         position: 'Fullstack Developer Internship',
         imageLight: whlogoWhite,
         imageDark: whlogoBlack,
-        description: 'Completed an internship during studies focusing on both frontend and backend development. Gained experience working in an agile team and was later hired as a consultant.',
+        description: 'Gained full-stack experience in an agile team, contributing to webshop development with Laravel, Vue.js, and MySQL. Later transitioned into a consultant role.',
         skills: ['Laravel', 'Vue.js', 'PHP', 'JavaScript', 'MySQL', 'Git'],
         year: 'Oct 2023 - May 2024'
     },
@@ -32,7 +32,7 @@ import { projects } from '../data/projects';
         position: 'Customer Service Agent',
         imageLight: whlogoWhite,
         imageDark: whlogoBlack,
-        description: 'Handled customer inquiries via chat, email, phone, and forums. Responsible for troubleshooting and managing delivery and order issues.',
+        description: 'Provided support via chat, email, phone, and forums. Responsible for troubleshooting, resolving order and delivery issues, and ensuring a positive customer experience.',
         skills: ['Customer Support', 'Troubleshooting', 'Communication'],
         year: 'Sep 2020 - Sep 2022'
     },

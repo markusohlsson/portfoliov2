@@ -6,6 +6,7 @@ import Contact from '../pages/Contact.vue';
 import About from '../pages/About.vue';
 import Success from '../pages/Success.vue';
 import ProjectDetails from '../pages/ProjectDetails.vue';
+import Privacy from '../pages/Privacy.vue';
 
 const routes = [
     { path: '/', component: Home, name: 'Home'},
@@ -14,6 +15,7 @@ const routes = [
     { path: '/contact', component: Contact, name: 'Contact'},
     { path: '/about', component: About, name: 'About'},
     { path: '/contact/success', component: Success, name: 'Success'},
+    { path: '/privacy-policy', component: Privacy, name: 'Privacy'}, 
 
 ];
 
