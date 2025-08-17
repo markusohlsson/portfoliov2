@@ -70,7 +70,10 @@
               <Moon class="settings-icon" />
             </li>
             <li class="settings">
-              <Play class="settings-icon" aria-label="Animations enabled" />
+              <Play
+                class="settings-icon"
+                aria-label="Animations enabled"
+              />
               <label class="switch">
                 <input 
                   type="checkbox" 
@@ -79,7 +82,10 @@
                 >
                 <span class="slider" />
               </label>
-              <Pause class="settings-icon" aria-label="Animations disabled"/>
+              <Pause
+                class="settings-icon"
+                aria-label="Animations disabled"
+              />
             </li>
           </ul>
         </div>
@@ -118,7 +124,10 @@
             <Mail />Contact
           </router-link>
         </li>
-        <li class="settings" :title="settings.darkmode ? 'Enable Light Theme' : 'Enable Dark Theme'">
+        <li
+          class="settings"
+          :title="settings.darkmode ? 'Enable Light Theme' : 'Enable Dark Theme'"
+        >
           <button
             class="darkmode-btn"
             @click="settings.toggleDarkMode"
@@ -127,13 +136,22 @@
             <Moon v-else />
           </button>
         </li>
-          <li class="settings" :title="settings.reducedMotion ? 'Enable Animations' : 'Disable Animations'">
+        <li
+          class="settings"
+          :title="settings.reducedMotion ? 'Enable Animations' : 'Disable Animations'"
+        >
           <button
             class="darkmode-btn"
             @click="settings.toggleReducedMotion"
           >
-            <Play v-if="settings.reducedMotion" aria-label="Animations disabled" />
-            <Pause v-else aria-label="Animations Enabled"/>
+            <Play
+              v-if="settings.reducedMotion"
+              aria-label="Animations disabled"
+            />
+            <Pause
+              v-else
+              aria-label="Animations Enabled"
+            />
           </button>
         </li>
       </ul>

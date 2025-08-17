@@ -30,6 +30,7 @@ body {
 	font-style: normal;
   margin: 0;
 }
+
 .reduced-motion * {
   transform: none !important;
   opacity: 1 !important;
