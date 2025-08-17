@@ -61,27 +61,56 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import Typed from 'typed.js'
+import { useSettingsStore } from '../stores/settings'
 
+const settings = useSettingsStore()
 const typedEl = ref(null)
 let typedInstance = null
 
+// Initialize Typed.js on mount
 onMounted(() => {
-  typedInstance = new Typed(typedEl.value, {
-    strings: ['Markus Ohlsson.'],
-    typeSpeed: 100,
-    backSpeed: 50,
-    showCursor: true,
-    cursorChar: '|',
-    loop: true,
-    startDelay: 900,
-  })
+  if (!settings.reducedMotion) {
+    typedInstance = new Typed(typedEl.value, {
+      strings: ['Markus Ohlsson.'],
+      typeSpeed: 100,
+      backSpeed: 50,
+      showCursor: true,
+      cursorChar: '|',
+      loop: true,
+      startDelay: 900,
+    })
+  } else {
+    typedEl.value.textContent = 'Markus Ohlsson.'
+  }
+})
+
+watch(() => settings.reducedMotion, (reduced) => {
+  // Destroy previous instance if it exists
+  if (typedInstance) {
+    typedInstance.destroy()
+    typedInstance = null
+  }
+
+  if (!reduced) {
+    typedEl.value.textContent = ''
+
+    typedInstance = new Typed(typedEl.value, {
+      strings: ['Markus Ohlsson.'],
+      typeSpeed: 100,
+      backSpeed: 50,
+      showCursor: true,
+      cursorChar: '|',
+      loop: true,
+      startDelay: 900,
+    })
+  } else {
+    typedEl.value.textContent = 'Markus Ohlsson.'
+  }
 })
 
 onBeforeUnmount(() => {
-  if (typedInstance) {
-    typedInstance.destroy()
-  }
+  if (typedInstance) typedInstance.destroy()
 })
 </script>

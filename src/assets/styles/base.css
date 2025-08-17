@@ -30,6 +30,12 @@ body {
 	font-style: normal;
   margin: 0;
 }
+.reduced-motion * {
+  transform: none !important;
+  opacity: 1 !important;
+  transition: none !important;
+  animation: none !important;
+}
 
 .privacy-link {
   color:inherit;
