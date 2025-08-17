@@ -131,6 +131,8 @@
           <button
             class="darkmode-btn"
             @click="settings.toggleDarkMode"
+            :aria-label="settings.darkmode ? 'Enable Light Theme' : 'Enable Dark Theme'"
+        >
           >
             <Sun v-if="settings.darkmode" />
             <Moon v-else />
