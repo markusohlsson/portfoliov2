@@ -54,5 +54,9 @@
 
 	.footer-bottom {
 		text-align: center;
+
+		.footer-cookie-toggle {
+			cursor: pointer;
+		}
 	}
 }

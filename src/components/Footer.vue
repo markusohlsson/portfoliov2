@@ -55,11 +55,16 @@
       <span>© 2025 Markus Ohlsson | <router-link
         class="privacy-link"
         to="/privacy-policy"
-      >Privacy Policy</router-link></span>
+      >Privacy Policy</router-link></span><span
+        class="footer-cookie-toggle"
+        @click="cookieStore.showBanner"
+      > | Cookie Options</span>
     </div>
   </div>
 </template>
 
 <script setup>
 import { Linkedin, Github, Mail } from 'lucide-vue-next';
+import { useCookieStore } from '../stores/cookie';
+const cookieStore = useCookieStore();
 </script>

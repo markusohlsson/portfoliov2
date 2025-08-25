@@ -12,6 +12,7 @@
 @import url('./components/hero.css');
 @import url('./components/largeprojectcard.css');
 @import url('./components/techstacklarge.css');
+@import url('./components//cookieconsent.css');
 
 /* Pages */
 @import url('./pages/about.css');

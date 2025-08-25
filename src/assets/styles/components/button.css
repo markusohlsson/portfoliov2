@@ -1,3 +1,5 @@
+@import url("../variables.css");
+
 .link-button {
   display: inline-flex;
   align-items: center;
@@ -16,7 +18,7 @@
     border-color 0.3s ease,
     box-shadow 0.3s ease,
     transform 0.2s ease;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow-xs);
   min-height: 44px;
 }
 
@@ -25,7 +27,7 @@
 .link-button:focus {
   background-color: var(--color-primary-btn-hvr);
   color: var(--secondary-color);
-  box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+  box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
 
@@ -36,11 +38,24 @@
   border-color: var(--color-secondary-btn);
 }
 
+.link-button.light {
+  background-color: var(--color-light-btn);
+  color: var(--primary-color);
+  border-color: var(--color-light-btn);
+}
+
+.link-button.light:hover {
+  background-color: var(--color-light-btn-hvr);
+  color:var(--color-secondary);
+  border-color: var(--color-btn-hvr);
+  box-shadow: var(--shadow-sm);
+}
+
 .link-button.secondary:hover,
 .link-button.secondary:focus {
   background-color: var(--color-secondary-btn-hvr);
   border-color: var(--color-secondary-btn);
-  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+  box-shadow: var(--shadow-sm);
 }
 
 /* Disabled */

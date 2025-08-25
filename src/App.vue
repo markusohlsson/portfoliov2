@@ -5,6 +5,7 @@ import { onMounted } from 'vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useSettingsStore } from './stores/settings';
+import CookieConsent from './components/CookieConsent.vue';
 
 const settings = useSettingsStore()
 settings.init()
@@ -37,5 +38,6 @@ onMounted(() => {
   <div class="content">
     <router-view />
   </div>
+  <CookieConsent />
   <Footer />
 </template>

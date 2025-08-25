@@ -9,7 +9,7 @@
 	background-color: var(--secondary-color);
 	color:var(--primary-color);
 	border-left: 4px solid var(--primary-color);
-	box-shadow: 0 2px 8px rgb(93 49 54 / 10%);
+	box-shadow: var(--shadow-md);
 
 	.education-logo {
 		height: 60px;
