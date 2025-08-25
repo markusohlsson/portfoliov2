@@ -29,24 +29,22 @@ import { watch } from 'vue';
 import { useCookieStore } from '../stores/cookie';
 import { useAnalytics } from '../composables/useAnalytics';
 
-// Pinia store
 const cookieStore = useCookieStore();
 
-// Get initAnalytics function from composable
-const { initAnalytics } = useAnalytics();
+const { initAnalytics, removeAnalytics } = useAnalytics();
 
-// Watch for consent changes, including persisted state
 watch(
   () => cookieStore.consentGiven,
   (newVal) => {
     if (newVal === true) {
       initAnalytics();
+    } else if (newVal === false) {
+      removeAnalytics();
     }
   },
-  { immediate: true } // ensures persisted consent triggers analytics on page load
+  { immediate: true }
 );
 
-// Accept / Reject handlers
 const accept = () => cookieStore.accept();
 const reject = () => cookieStore.reject();
 </script>
