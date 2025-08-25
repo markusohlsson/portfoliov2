@@ -46,8 +46,8 @@
 
 .link-button.light:hover {
   background-color: var(--color-light-btn-hvr);
-  color:var(--color-secondary);
-  border-color: var(--color-btn-hvr);
+  color:var(--secondary-color);
+  border-color: var(--color-light-btn-hvr);
   box-shadow: var(--shadow-sm);
 }
 

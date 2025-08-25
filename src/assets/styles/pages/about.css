@@ -18,7 +18,7 @@
 				height: 180px;
 				object-fit: cover;
 				border-radius: var(--radius-fifty);
-				border: 3px solid var(--color-primary);
+				border: 3px solid var(--primary-color);
 			}
 		}
 

@@ -61,7 +61,7 @@
 	gap: var(--space-sm);
 	background-color: var(--secondary-color);
 	padding: var(--space-md);
-	border-radius: var(--radius-lg);
+	border-radius: var(--radius-md);
 	box-shadow: var(--shadow-sm);
 	max-width: 700px;
 }
