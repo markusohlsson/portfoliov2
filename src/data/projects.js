@@ -2,6 +2,7 @@ import { techs } from './techs';
 
 import omdb from '../assets/img/projects/omdb.png'
 import portfolio from '../assets/img/projects/portfolio.png'
+import tattoo from '../assets/img/projects/tattoo.png'
 
 
 export const projects = [
@@ -32,9 +33,9 @@ export const projects = [
     image: portfolio,
     demo: 'https://www.ohlsson.dev',
     repo: 'https://github.com/markusohlsson/portfoliov2',
-    featured: true,
+    featured: false,
     frontendTech: [techs.vue, techs.vite, techs.vueRouter, techs.aos, techs.typedjs, techs.lucide, techs.css, techs.eslint, techs.pinia],
-    backendTech: null,
+    backendTech: [],
     features: [
       'Fully responsive design, optimized for mobile, tablet, and desktop.',
       'Built with Vue 3 for scalable and maintainable code.',
@@ -45,4 +46,23 @@ export const projects = [
       'Hosted with HTTPS and optimized for performance (Lighthouse 90+).'
     ],
   },
+    {
+    id: 'tattoo',
+    title: 'Tattoo Portfolio Website',
+    shortDescription: 'A modern portfolio website for a tattoo artist, featuring tattoos, sketches, arts & crafts, and event information.',
+    longDescription: 'The Tattoo Portfolio Website is a responsive web application built with Vue 3 and Vite. It showcases a tattoo artist’s work, including tattoos, sketches, arts & crafts, and design projects. The site also features sections for artist experience, events, and exhibitions. Smooth scroll animations powered by AOS enhance the user experience, while GitHub Pages provides fast and reliable hosting.',
+    image: tattoo,
+    demo: 'https://markusohlsson.github.io/tattoo',
+    repo: 'https://github.com/markusohlsson/tattoo',
+    frontendTech: [ techs.vue, techs.vite, techs.vueRouter, techs.lucide, techs.aos ],
+    backendTech: [],
+    features: [
+      'Showcases tattoos, sketches, and design work.',
+      'Responsive design optimized for mobile and desktop.',
+      'Smooth scroll animations using AOS.',
+      'Event and exhibition information sections.',
+      'Deployed seamlessly on GitHub Pages.',
+    ],
+    featured: true,
+  }
 ];

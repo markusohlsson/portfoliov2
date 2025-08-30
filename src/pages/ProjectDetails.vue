@@ -83,7 +83,7 @@
 
       <div class="projectdetails-section">
         <h3
-          v-if="project.backendTech"
+          v-if="project.backendTech.length"
           class="projectdetails-section-title"
           data-aos="fade-up-left"
         >
